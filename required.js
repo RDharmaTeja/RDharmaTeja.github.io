@@ -56,7 +56,7 @@ function addBall(){
 //updating canvas
 function update(){
   var i;
- // clearCanvas();
+  clearCanvas();
   for(i=0;i<count;i++){
   ball[i].update();
 }

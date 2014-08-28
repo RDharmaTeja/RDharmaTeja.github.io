@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script type="text/javascript" src="https://platform.linkedin.com/in.js">
+  api_key: 75ysmmh4d04k7k
+  authorize: true
+</script>
+ 
+<script type="text/javascript">
+function onLinkedInAuth() {
+  IN.API.Profile("me")
+    .result( function(me) {
+      var id = me.values[0].id;
+      // AJAX call to pass back id to your server
+    });
+}
+</script>
+
+<title>LinkedIn Login JavaScript Example</title>
+<meta charset="UTF-8">
+</head>
+<body>
+
+<script type="IN/Login" data-onAuth="onLinkedInAuth"></script>
+
+
+<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+</fb:login-button>
+<a href="#" onclick="ask_friends();">friends</a>
+
+<div id="status">
+</div>
+<div id="image"></div>
+
+</body>
+</html>

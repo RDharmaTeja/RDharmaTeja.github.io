@@ -82,7 +82,7 @@
       console.log('Successful login for: ' + response.name);
       document.getElementById('status').innerHTML =
         'Thanks for logging in, ' + response.name + '<br>'+response.email+'<br>'+response.id+'<br>'+response.link;
-        var user_image = "https://graph.facebook.com/"+respnse.id+"/picture?type=large";
+        var user_image = "https://graph.facebook.com/"+response.id+"/picture?type=large";
       document.getElementById('image').innerHTML="<img src='"+user_image+"'>";
     });
   }

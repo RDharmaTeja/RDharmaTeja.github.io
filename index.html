@@ -35,6 +35,7 @@
   function checkLoginState() {
     FB.getLoginStatus(function(response) {
       statusChangeCallback(response);
+
     });
   }
 
@@ -87,6 +88,13 @@
     });
   }
 
+  function ask_friends(){
+FB.login(function(response) {
+   console.log(response);
+ }, {scope: 'user_friends'});
+
+  }
+
 </script>
 
 <!--
@@ -95,8 +103,9 @@
   the FB.login() function when clicked.
 -->
 
-<fb:login-button scope="public_profile,email,user_friends" onlogin="checkLoginState();">
+<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
 </fb:login-button>
+<a onclick="ask_friends();">friends</a>
 
 <div id="status">
 </div>

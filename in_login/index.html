@@ -10,11 +10,16 @@
 <script type="text/javascript">
 function onLinkedInAuth() {
 IN.API.Profile("me").result(displayProfile);
-
+IN.API.Profile("me").fields(["posititons","summary"]).result(extraFields);
 }
 function displayProfile(profile){
    user=profile.values[0];
-document.getElementById("profile").innerHTML="User Id: "+user.id+"<br>First Name: "+user.firstName+"<br> Last Name"+user.lastName+"<br>Head Line: "+user.headline+"<br>Picture: <img src='"+user.pictureUrl+"'> <br> Location: "+user.location[0]+"<br>Industry: "+user.industry;
+document.getElementById("profile").innerHTML="User Id: "+user.id+"<br>First Name: "+user.firstName+"<br> Last Name"+user.lastName+"<br>Head Line: "+user.headline+"<br>Picture: <img src='"+user.pictureUrl+"'>";
+}
+
+function extraFields(profile){
+  user=profile.values[0];
+document.getElementById("extra").innerHTML="Positions: "+user.positions.title;  
 }
 
 function load(){
@@ -29,7 +34,8 @@ function load(){
 <script type="in/Login">
 </script>
 <div id="profile">
-
+  </div>
+  <div id ="extra">
   </div>
 
 </body>

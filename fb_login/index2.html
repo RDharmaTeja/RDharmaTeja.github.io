@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Facebook Login JavaScript Example</title>
+<meta charset="UTF-8">
+</head>
+<body>
+<script>
+     
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '352874438194856',
+          cookie     : true,
+          xfbml      : true,
+          version    : 'v2.0'
+        });
+      };
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    
+  function checkLoginState(){
+  FB.getLoginStatus(function(response) {
+    statusChangeCallback(response);
+    });
+
+  } 
+
+  function statusChangeCallback(response){
+    if (response.status==='connected') {
+    accessT=response.authResponse.accessToken;
+    id=response.authResponse.userID;
+    extractData(accessT,id);
+    };
+    else if (response.status==='not_authorized') {
+    document.getElementById("status").innerHTML="Authorize our app";
+    };
+    else {
+    document.getElementById("status").innerHTML="Login into facebook";
+    };
+ } 
+
+  function extractData(accessT,id){
+  FB.api('/me',function(response){
+   id=reponse.id;
+   name=response.name;
+   email=response.email;
+   first_name=response.first_name;
+   last_name=response.last_name;
+   link=response.link;
+   locale=response.locale;
+   gender=response.gender;
+document.getElementById("data").innerHTML=id+"<br>"+name+"<br>"+email+"<br>"+first_name+"<br>"+last_name+"<br>"+locale+"<br>"+gender+"<br>"
+  });
+  }
+
+</script>
+
+<!--
+  Below we include the Login Button social plugin. This button uses
+  the JavaScript SDK to present a graphical Login button that triggers
+  the FB.login() function when clicked.
+-->
+
+<fb:login-button scope="public_profile,email,user_friends" onlogin="checkLoginState();">
+</fb:login-button>
+<div id="status">
+</div>
+<div id="image"></div>
+<div id="data"></div>
+</body>
+</html>

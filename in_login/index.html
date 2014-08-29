@@ -3,7 +3,7 @@
 <head>
   <script type="text/javascript" src="https://platform.linkedin.com/in.js">
   api_key: 75ysmmh4d04k7k
-  onLoad: onLinkedInLoad
+  onLoad: load
   authorize: true
 </script>
  
@@ -17,7 +17,7 @@ function displayProfile(profile){
 document.getElementById("profile").innerHTML="User Id: "+user.id+"<br>First Name: "+user.firstName+"<br> Last Name"+user.lastName+"<br>Head Line: "+user.headline+"<br><img src='"+user.pictureUrl+"'>";
 }
 
-function onLinkedInload(){
+function load(){
    IN.Event.on(IN, "auth", onLinkedInAuth);
 }
 </script>

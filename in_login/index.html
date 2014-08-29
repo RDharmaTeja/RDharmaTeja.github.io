@@ -88,7 +88,7 @@ phoneHTML=data.phoneNumbers.values[0].phoneNumber;
 function displayConnections(id,div) {
  IN.API.Connections(id)
     .fields(["id","firstName","lastName","pictureUrl","publicProfileUrl","summary","num-connections","location","industry","positions","specialties"])
-    .params({"count":150})
+    .params({"count":50})
     .result(function(result) {
     profHTML = "";
       for (var index in result.values) {
@@ -128,6 +128,8 @@ function onLinkedInAuth() {
 </script>
 </head>
 <body>
+  <script type="in/Login">
+</script>
   <center><b>Basic Profile(authorization is not needeed, can be accessed for any connection)</b></center>
   <div id="basic_profile"></div>
   <center><b>Full Profile(authorization needeed, only login user)</b></center>

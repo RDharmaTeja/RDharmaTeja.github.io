@@ -48,27 +48,27 @@ IN.API.Profile(id).fields(["email-address","last-modified-timestamp","proposal-c
 data=result.values[0];  
 
 skillsHTML="";
-if(data.skills!=undefined){
+if(data.skills.values!=undefined){
 for(var index in data.skills.values){
   skillsHTML+=data.skills.values[index].skill.name+", ";
 }
 }
 
 languagesHTML=""
-if(data.languages!=undefined){
+if(data.languages.values!=undefined){
 for(var index in data.languages.values){
     languagesHTML+=data.languages.values[index].language.name+", ";
 }
 }
 
 educationHTML=""
-if(data.educations!=undefined){
+if(data.educations.values!=undefined){
 for(var index in data.educations.values){
     educationHTML+=data.educations.values[index].schoolName+","+data.educations.values[index].fieldOfStudy+"<br>";
 } 
 }
 phoneHTML=""
-if (data.phoneNumbers!=undefined) {
+if (data.phoneNumbers.values!=undefined) {
 phoneHTML=data.phoneNumbers.values[0].phoneNumber;  
 };
 

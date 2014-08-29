@@ -1,103 +1,139 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <script type="text/javascript" src="https://platform.linkedin.com/in.js">
+<script type="text/javascript" src="https://platform.linkedin.com/in.js">
   api_key: 75ysmmh4d04k7k
   onLoad: load
   authorize: true
 </script>
- 
-<script type="text/javascript">
-function onLinkedInAuth() {
-IN.API.Profile("me").result(displayProfile);
-IN.API.Profile("me").fields(["email-address","publicProfileUrl","summary","num-connections","location","industry","positions","specialties","last-modified-timestamp","proposal-comments","associations","interests","publications","patents:(title)","languages:(language)","skills:(skill)","certifications","educations","courses","volunteer","three-current-positions","three-past-positions","following","date-of-birth","suggestions","related-profile-views","honors-awards","phone-numbers","im-accounts","main-address","twitter-accounts"]).result(extraFields);
+<script>
 
-
-
-  IN.API.Connections("me")
-    .fields(["pictureUrl","publicProfileUrl"])
-    .params({"count":30})
-    .result(function(result) {
-    profHTML = "";
-      for (var index in result.values) {
-          profile = result.values[index]
-          if (profile.pictureUrl) {
-              profHTML += "<a href=\"" + profile.publicProfileUrl + "\">";
-              profHTML += "<img class=img_border height=50 align=\"left\" src=\"" + profile.pictureUrl + "\"> </a>&nbsp;&nbsp; ";   
-          }    
-      }
-      document.getElementById("connections").innerHTML=profHTML;
-    });
-
-}
-function displayProfile(profile){
-   user=profile.values[0];
-   
-document.getElementById("profile").innerHTML="<center><h4>Basic Profile</h4></center><b>User Id: </b>"+user.id+"<br><b>First Name: </b>"+user.firstName+"<br><b> Last Name</b>"+user.lastName+"<br><b>Head Line: </b>"+user.headline+"<br><img src='"+user.pictureUrl+"'>";
-}
-
-function extraFields(profile){
-  user=profile.values[0];
-  phone=user.phoneNumbers;
-  skillsHTML="";
-//skills
-for(var index in user.skills.values){
-    skillsHTML+=user.skills.values[index].skill.name+", ";
-
-}
-//languages
-languagesHTML="";
-for(var index in user.languages.values){
-    languagesHTML+=user.languages.values[index].language.name+", ";
-
-}
-
-//education
-educationsHTML="";
-for(var index in user.educations.values){
-    educationsHTML+=user.educations.values[index].schoolName+", ";
-}
-
-//volunteer
-volunteerHTML="";
-for(var index in user.volunteer.values){
-    volunteerHTML+=user.volunteer.values[index].role+", ";
-}
-//positions
-PositionHTML="";
-for(var index in user.positions.values){
-    PositionHTML+=user.positions.values[index].title+","+user.positions.values[index].company.name+"<br>";
-}
-//associations
-
-
-
-document.getElementById("extra").innerHTML="<b>Email Id:</b> "+user.emailAddress+"<br><b>Profile url: </b>"+user.publicProfileUrl+"<br><b>Summary of Profile: </b>"+user.summary+"<br><b>Specialties: </b>"+user.specialties+"<br><b>Connections: </b>"+user.numConnections+"<br><b>Location: </b>"+user.location.name+"<br><b>Positions held:</b><br> "+PositionHTML+"<br><center><h4>Full profile</h4></center>";
-
-document.getElementById("full_profile").innerHTML="Last profile modified timestamp: "+user.lastModifiedTimestamp+"<br>Proposal comments: "+user.proposalComments+"<br>Associations: "+user.associations+"<br>Interests: "+user.interests+"<br> Publications:<br>Patents: "+user.patents+"<br>Languages :"+languagesHTML+"<br> Skills: "+skillsHTML+"<br>Certifications: "+user.certifications+"<br>Educations: "+educationsHTML+"<br>Courses: "+user.courses+"<br>Volunteer Experience:"+volunteerHTML+"<br> Following:"+user.following+"<br> Date of birth:"+user.dateOfBirth.day+"-"+user.dateOfBirth.month+"<br><center><h4>Contact Details</h4></center><br>Phone Number: "+phone.values[0].phoneNumber+"<br>Main Address: "+user.mainAddress+"<br> Twitter accounts:"+user.twitterAccounts+"<br><center><b>Connections</b></center><br>";
-
-
-
-}
 
 function load(){
    IN.Event.on(IN, "auth", onLinkedInAuth);
 }
-</script>
 
-<title>LinkedIn Login JavaScript Example</title>
-<meta charset="UTF-8">
+//function for displaying basic profile starts:
+//
+function displayBasicProfile(id,div){
+ IN.API.Profile(id).fields("id","firstName","lastName","pictureUrl","publicProfileUrl","summary","num-connections","location","industry","positions","specialties").result(display);
+ function display(result) {
+   data=result.values[0];
+   PositionHTML="";
+   locationHTML="";
+//positions   
+   if(data.positions!=undefined){
+   for(var index in data.positions.values){
+       PositionHTML+=data.positions.values[index].title+","+data.positions.values[index].company.name+"<br>";
+     }
+   }
+
+//location
+   if(data.location!=undefined){
+  locationHTML+=data.location.name;
+   } 
+
+  dataHTMl = "<b>User Id :</b>"+data.id+"<br><b>First Name: </b>"+data.firstName+"<br><b>Last Name:</b>"+data.lastName+"<br><img src='"+data.pictureUrl+"'> <br><b>Summary of Profile: </b>"+data.summary+"<br><b>Specialties: </b>"+data.specialties+"<br><b>Connections: </b>"+data.numConnections+"<br><b>Location: </b>"+locationHTML+"<br><b>Employment :</b><br> "+PositionHTML+
+  "<br>";
+  document.getElementById(div).innerHTML=dataHTMl;
+  }
+}
+//function for displaying basic profile ends:
+///***********************
+
+//function for displaying full profile starts
+
+function displayFullProfile(id,div){
+IN.API.Profile(id).fields(["email-address","last-modified-timestamp","proposal-comments","associations","interests","publications","patents:(title)","languages:(language)","skills:(skill)","certifications","educations","courses","volunteer","following","date-of-birth","suggestions","related-profile-views","honors-awards","phone-numbers","im-accounts","main-address","twitter-accounts"]).result(function(result){
+data=result.values[0];  
+
+skillsHTML="";
+if(data.skills!=undefined){
+for(var index in data.skills.values){
+  skillsHTML+=data.skills.values[index].skill.name+", ";
+}
+}
+
+languagesHTML=""
+if(data.languages!=undefined){
+for(var index in data.languages.values){
+    languagesHTML+=data.languages.values[index].language.name+", ";
+}
+}
+
+educationHTML=""
+if(data.educations!=undefined){
+for(var index in data.educations.values){
+    educationHTML+=data.educations.values[index].schoolName+","+data.educations.values[index].fieldOfStudy+"<br>";
+} 
+}
+phoneHTML=""
+if (data.phoneNumbers!=undefined) {
+phoneHTML=data.phoneNumbers.values[0].phoneNumber;  
+};
+
+
+   dataHTMl="<b>User Email:</b>"+data.emailAddress+"<br><b>Skills:</b>"+skillsHTML+"<br><b>Languages:</b>"+languagesHTML+"<br><b>Education: </b><br>"+educationHTML+"<b>Phone number:</b>"+phoneHTML;
+
+  document.getElementById(div).innerHTML=dataHTMl;
+});
+
+
+
+}
+
+//function for displaying full p ends
+
+//connection function starts
+function displayConnections(id,div) {
+ IN.API.Connections(id)
+    .fields(["id","firstName","lastName","pictureUrl","publicProfileUrl","summary","num-connections","location","industry","positions","specialties"])
+    .params({"count":150})
+    .result(function(result) {
+    profHTML = "";
+      for (var index in result.values) {
+
+          data = result.values[index]
+          PositionHTML="";
+          locationHTML="";
+//positions   
+   if(data.positions!=undefined){
+   for(var index in data.positions.values){
+       PositionHTML+=data.positions.values[index].title+","+data.positions.values[index].company.name+"<br>";
+     }
+   }
+
+//location
+   if(data.location!=undefined){
+  locationHTML+=data.location.name;
+   } 
+
+  profHTML += "<b>User Id :</b>"+data.id+"<br><b>First Name: </b>"+data.firstName+"<br><b>Last Name:</b>"+data.lastName+"<br><img src='"+data.pictureUrl+"'> <br><b>Summary of Profile: </b>"+data.summary+"<br><b>Specialties: </b>"+data.specialties+"<br><b>Connections: </b>"+data.numConnections+"<br><b>Location: </b>"+locationHTML+"<br><b>Employment :</b><br> "+PositionHTML+"<br><hr>";
+          }
+          document.getElementById(div).innerHTML=profHTML;    
+      });
+      
+}
+//connection function ends
+//
+
+//
+//onlinked In Auth
+function onLinkedInAuth() {
+  displayBasicProfile("me","basic_profile");
+  displayFullProfile("me","full_profile");
+    displayConnections("me","connections");
+}
+
+</script>
 </head>
 <body>
-<script type="in/Login">
-</script>
-<div id="profile">
-  </div>
-  <div id ="extra">
-  </div>
-<div id="full_profile">
-</div>
-<div id="connections">
-  </div>
-</body>
-</html>
+  <center><b>Basic Profile(authorization is not needeed, can be accessed for any connection)</b></center>
+  <div id="basic_profile"></div>
+  <center><b>Full Profile(authorization needeed, only login user)</b></center>
+  <div id="full_profile"></div>
+  <center><b>Connections (authorization needeed, only login user)</b></center><br>
+    <div id="connections"></div>
+    <br><br>
+    <div id="connectedUser"></div>
+  </body>

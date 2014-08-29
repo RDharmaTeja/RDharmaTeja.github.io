@@ -10,7 +10,7 @@
 <script type="text/javascript">
 function onLinkedInAuth() {
 IN.API.Profile("me").result(displayProfile);
-IN.API.Profile("me").fields(["summary"]).result(extraFields);
+IN.API.Profile("me").fields(["summary","num-connections"]).result(extraFields);
 }
 function displayProfile(profile){
    user=profile.values[0];
@@ -19,7 +19,7 @@ document.getElementById("profile").innerHTML="User Id: "+user.id+"<br>First Name
 
 function extraFields(profile){
   user=profile.values[0];
-document.getElementById("extra").innerHTML="Positions: "+user.summary;  
+document.getElementById("extra").innerHTML="Positions: "+user.num-connections;  
 }
 
 function load(){

@@ -36,13 +36,12 @@
     accessT=response.authResponse.accessToken;
     id=response.authResponse.userID;
     extractData(accessT,id);
-    };
-    else if (response.status==='not_authorized') {
+    } else if (response.status==='not_authorized') {
     document.getElementById("status").innerHTML="Authorize our app";
-    };
+    }
     else {
     document.getElementById("status").innerHTML="Login into facebook";
-    };
+    }
  } 
 
   function extractData(accessT,id){

@@ -14,7 +14,7 @@ IN.API.Profile("me").result(displayProfile);
 }
 function displayProfile(profile){
    user=profile.values[0];
-document.getElementById("profile").innerHTML="User Id: "+user.id+"<br>First Name: "+user.firstName+"<br> Last Name"+user.lastName+"<br>Head Line: "+user.headline+"<br>Picture: <img src='"+user.pictureUrl+"'> <br> Location: "+user.location[name]+" ,"+user.location.country[code];
+document.getElementById("profile").innerHTML="User Id: "+user.id+"<br>First Name: "+user.firstName+"<br> Last Name"+user.lastName+"<br>Head Line: "+user.headline+"<br>Picture: <img src='"+user.pictureUrl+"'> <br> Location: "+user.location;
 }
 
 function load(){

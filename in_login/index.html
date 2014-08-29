@@ -19,7 +19,7 @@ document.getElementById("profile").innerHTML="User Id: "+user.id+"<br>First Name
 
 function extraFields(profile){
   user=profile.values[0];
-document.getElementById("extra").innerHTML="Summary: "+user.summary+"Connections: "+user.numConnections;  
+document.getElementById("extra").innerHTML="Summary: "+user.summary+"<br>Connections: "+user.numConnections+"Location: "+user.location.name;  
 }
 
 function load(){

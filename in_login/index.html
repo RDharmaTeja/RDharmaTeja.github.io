@@ -10,16 +10,74 @@
 <script type="text/javascript">
 function onLinkedInAuth() {
 IN.API.Profile("me").result(displayProfile);
-IN.API.Profile("me").fields(["summary","num-connections","location","industry","positions"]).result(extraFields);
+IN.API.Profile("me").fields(["email-address","publicProfileUrl","summary","num-connections","location","industry","positions","specialties","last-modified-timestamp","proposal-comments","associations","interests","publications","patents:(title)","languages:(language)","skills:(skill)","certifications","educations","courses","volunteer","three-current-positions","three-past-positions","following","date-of-birth","suggestions","related-profile-views","honors-awards","phone-numbers","im-accounts","main-address","twitter-accounts"]).result(extraFields);
+
+
+
+  IN.API.Connections("me")
+    .fields(["pictureUrl","publicProfileUrl"])
+    .params({"count":30})
+    .result(function(result) {
+    profHTML = "";
+      for (var index in result.values) {
+          profile = result.values[index]
+          if (profile.pictureUrl) {
+              profHTML += "<a href=\"" + profile.publicProfileUrl + "\">";
+              profHTML += "<img class=img_border height=50 align=\"left\" src=\"" + profile.pictureUrl + "\"> </a>&nbsp;&nbsp; ";   
+          }    
+      }
+      document.getElementById("connections").innerHTML=profHTML;
+    });
+
 }
 function displayProfile(profile){
    user=profile.values[0];
-document.getElementById("profile").innerHTML="User Id: "+user.id+"<br>First Name: "+user.firstName+"<br> Last Name"+user.lastName+"<br>Head Line: "+user.headline+"<br>Picture: <img src='"+user.pictureUrl+"'>";
+   
+document.getElementById("profile").innerHTML="<center><h4>Basic Profile</h4></center><b>User Id: </b>"+user.id+"<br><b>First Name: </b>"+user.firstName+"<br><b> Last Name</b>"+user.lastName+"<br><b>Head Line: </b>"+user.headline+"<br><img src='"+user.pictureUrl+"'>";
 }
 
 function extraFields(profile){
   user=profile.values[0];
-document.getElementById("extra").innerHTML="Summary: "+user.summary+"<br>Connections: "+user.numConnections+"<br>Location: "+user.location.name+"<br> Position: "+user.positions.id;  
+  phone=user.phoneNumbers;
+  skillsHTML="";
+//skills
+for(var index in user.skills.values){
+    skillsHTML+=user.skills.values[index].skill.name+", ";
+
+}
+//languages
+languagesHTML="";
+for(var index in user.languages.values){
+    languagesHTML+=user.languages.values[index].language.name+", ";
+
+}
+
+//education
+educationsHTML="";
+for(var index in user.educations.values){
+    educationsHTML+=user.educations.values[index].schoolName+", ";
+}
+
+//volunteer
+volunteerHTML="";
+for(var index in user.volunteer.values){
+    volunteerHTML+=user.volunteer.values[index].role+", ";
+}
+//positions
+PositionHTML="";
+for(var index in user.positions.values){
+    PositionHTML+=user.positions.values[index].title+","+user.positions.values[index].company.name+"<br>";
+}
+//associations
+
+
+
+document.getElementById("extra").innerHTML="<b>Email Id:</b> "+user.emailAddress+"<br><b>Profile url: </b>"+user.publicProfileUrl+"<br><b>Summary of Profile: </b>"+user.summary+"<br><b>Specialties: </b>"+user.specialties+"<br><b>Connections: </b>"+user.numConnections+"<br><b>Location: </b>"+user.location.name+"<br><b>Positions held:</b><br> "+PositionHTML+"<br><center><h4>Full profile</h4></center>";
+
+document.getElementById("full_profile").innerHTML="Last profile modified timestamp: "+user.lastModifiedTimestamp+"<br>Proposal comments: "+user.proposalComments+"<br>Associations: "+user.associations+"<br>Interests: "+user.interests+"<br> Publications:<br>Patents: "+user.patents+"<br>Languages :"+languagesHTML+"<br> Skills: "+skillsHTML+"<br>Certifications: "+user.certifications+"<br>Educations: "+educationsHTML+"<br>Courses: "+user.courses+"<br>Volunteer Experience:"+volunteerHTML+"<br> Following:"+user.following+"<br> Date of birth:"+user.dateOfBirth.day+"-"+user.dateOfBirth.month+"<br><center><h4>Contact Details</h4></center><br>Phone Number: "+phone.values[0].phoneNumber+"<br>Main Address: "+user.mainAddress+"<br> Twitter accounts:"+user.twitterAccounts+"<br><center><b>Connections</b></center><br>";
+
+
+
 }
 
 function load(){
@@ -37,6 +95,9 @@ function load(){
   </div>
   <div id ="extra">
   </div>
-
+<div id="full_profile">
+</div>
+<div id="connections">
+  </div>
 </body>
 </html>

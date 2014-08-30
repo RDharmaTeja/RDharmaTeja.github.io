@@ -11,9 +11,7 @@
     statusChangeCallback(response);
     });
   } 
-FB.getLoginStatus(function(response) {
-    statusChangeCallback(response);
-  });
+
 
 function statusChangeCallback(response){
     if (response.status==='connected') {
@@ -63,7 +61,9 @@ document.getElementById("data").innerHTML="<br><b>ID: </b>"+id+"<br><b>Name: </b
          fjs.parentNode.insertBefore(js, fjs);
        }(document, 'script', 'facebook-jssdk'));
 //initializing sdk starts      
-
+FB.getLoginStatus(function(response) {
+    statusChangeCallback(response);
+  });
 
 
 

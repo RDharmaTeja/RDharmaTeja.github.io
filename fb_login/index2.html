@@ -51,6 +51,10 @@ document.getElementById("data").innerHTML="<br><b>ID: </b>"+id+"<br><b>Name: </b
           xfbml      : true,
           version    : 'v2.0'
         });
+ FB.getLoginStatus(function(response) {
+    statusChangeCallback(response);
+  });
+
       };
 
       (function(d, s, id){
@@ -61,9 +65,7 @@ document.getElementById("data").innerHTML="<br><b>ID: </b>"+id+"<br><b>Name: </b
          fjs.parentNode.insertBefore(js, fjs);
        }(document, 'script', 'facebook-jssdk'));
 //initializing sdk starts      
-FB.getLoginStatus(function(response) {
-    statusChangeCallback(response);
-  });
+
 
 
 

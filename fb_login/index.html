@@ -39,8 +39,16 @@ function extractData(accessT,id){
    locale=response.locale;
    gender=response.gender;
    user_image = "https://graph.facebook.com/"+response.id+"/picture?type=large";
-document.getElementById("data").innerHTML="<br><b>ID: </b>"+id+"<br><b>Name: </b>"+name+"<br><b>Email: </b>"+email+"<br><b>FirstName: </b>"+first_name+"<br><b>Last Name: </b>"+last_name+"<br><img src='"+user_image+"'><br><b>Gender: </b>"+gender+"<br><b>Birth Day: </b>"+response.birthday+"<br><b>About: </b>"+response.about+"<br><b>Bio: </b>"+response.bio+"<br><b>Education: </b><br>"+JSON.stringify(response.education)+"<br><b>HomeTown: </b><br>"+JSON.stringify(response.hometown)+"<br><b>Current Location: </b><br>"+JSON.stringify(response.location)+"<br><b>Work: </b><br>"+JSON.stringify(response.work)+"<br><br>";
+document.getElementById("data").innerHTML="<br><b>ID: </b>"+id+"<br><b>Name: </b>"+name+"<br><b>Email: </b>"+email+"<br><b>FirstName: </b>"+first_name+"<br><b>Last Name: </b>"+last_name+"<br><img src='"+user_image+"'><br><b>Gender: </b>"+gender+"<br><b>Birth Day: </b><br><center>Needs to be reviewed</center>"+response.birthday+"<br><b>About: </b>"+response.about+"<br><b>Bio: </b>"+response.bio+"<br><b>Education: </b><br>"+JSON.stringify(response.education)+"<br><b>HomeTown: </b><br>"+JSON.stringify(response.hometown)+"<br><b>Current Location: </b><br>"+JSON.stringify(response.location)+"<br><b>Work: </b><br>"+JSON.stringify(response.work)+"<br><br>";
   });
+
+ FB.api("me/friends",function(response){
+        if (response && !response.error) {
+        /* handle the result */
+        document.getElementById("friends").innerHTML=JSON.stringify(response);
+      }
+ });
+
   }
 
  //initializing sdk starts    
@@ -82,7 +90,9 @@ document.getElementById("data").innerHTML="<br><b>ID: </b>"+id+"<br><b>Name: </b
 <div class="fb-login-button" scope="public_profile,email,user_friends,user_about_me,user_birthday,user_education_history,user_hometown,user_location,user_work_history" data-max-rows="1" data-size="medium" data-show-faces="false" data-auto-logout-link="true" onlogin="checkLoginState();"></div>
 <div id="status">
 </div>
-<div id="image"></div>
+
 <div id="data"></div>
+
+<div id="friends"></div>
 </body>
 </html>

@@ -6,7 +6,41 @@
 </head>
 <body>
 <script>
-    
+    function checkLoginState(){
+  FB.getLoginStatus(function(response) {
+    statusChangeCallback(response);
+    });
+  } 
+
+  
+function statusChangeCallback(response){
+    if (response.status==='connected') {
+    accessT=response.authResponse.accessToken;
+    id=response.authResponse.userID;
+    extractData(accessT,id);
+    } else if (response.status==='not_authorized') {
+    document.getElementById("status").innerHTML="Authorize our app";
+    }
+    else {
+    document.getElementById("status").innerHTML="Login into facebook";
+    }
+ } 
+
+
+function extractData(accessT,id){
+  FB.api('me',function(response){
+   id=response.id;
+   name=response.name;
+   email=response.email;
+   first_name=response.first_name;
+   last_name=response.last_name;
+   link=response.link;
+   locale=response.locale;
+   gender=response.gender;
+document.getElementById("data").innerHTML="<br>"+id+"<br>"+name+"<br>"+email+"<br>"+first_name+"<br>"+last_name+"<br>"+locale+"<br>"+gender+"<br>"+response.birthday;
+  });
+  }
+
  //initializing sdk starts    
       window.fbAsyncInit = function() {
         FB.init({
@@ -27,40 +61,8 @@
 //initializing sdk starts      
 
 
-function checkLoginState(){
-  FB.getLoginStatus(function(response) {
-    statusChangeCallback(response);
-    });
-  } 
 
 
-function statusChangeCallback(response){
-    if (response.status==='connected') {
-    accessT=response.authResponse.accessToken;
-    id=response.authResponse.userID;
-    extractData(accessT,id);
-    } else if (response.status==='not_authorized') {
-    document.getElementById("status").innerHTML="Authorize our app";
-    }
-    else {
-    document.getElementById("status").innerHTML="Login into facebook";
-    }
- } 
-
-
-function extractData(accessT,id){
-  FB.api('494336804035743',function(response){
-   id=response.id;
-   name=response.name;
-   email=response.email;
-   first_name=response.first_name;
-   last_name=response.last_name;
-   link=response.link;
-   locale=response.locale;
-   gender=response.gender;
-document.getElementById("data").innerHTML=accessT+"<br>"+id+"<br>"+name+"<br>"+email+"<br>"+first_name+"<br>"+last_name+"<br>"+locale+"<br>"+gender+"<br>"+response.birthday;
-  });
-  }
 
 </script>
 

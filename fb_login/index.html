@@ -6,87 +6,68 @@
 </head>
 <body>
 <script>
-  // This is called with the results from from FB.getLoginStatus().
-  function statusChangeCallback(response) {
-    console.log('statusChangeCallback');
-    console.log(response);
-    // The response object is returned with a status field that lets the
-    // app know the current login status of the person.
-    // Full docs on the response object can be found in the documentation
-    // for FB.getLoginStatus().
-    if (response.status === 'connected') {
-      // Logged into your app and Facebook.
-      testAPI();
-    } else if (response.status === 'not_authorized') {
-      // The person is logged into Facebook, but not your app.
-      document.getElementById('status').innerHTML = 'Please log ' +
-        'into this app.';
-    } else {
-      // The person is not logged into Facebook, so we're not sure if
-      // they are logged into this app or not.
-      document.getElementById('status').innerHTML = 'Please log ' +
-        'into Facebook.';
-    }
-  }
-
-  // This function is called when someone finishes with the Login
-  // Button.  See the onlogin handler attached to it in the sample
-  // code below.
-  function checkLoginState() {
-    FB.getLoginStatus(function(response) {
-      statusChangeCallback(response);
-
-    });
-  }
-
-  window.fbAsyncInit = function() {
-  FB.init({
-    appId      : '352874438194856',
-    cookie     : true,  // enable cookies to allow the server to access 
-                        // the session
-    xfbml      : true,  // parse social plugins on this page
-    version    : 'v2.1' // use version 2.1
-  });
-
-  // Now that we've initialized the JavaScript SDK, we call 
-  // FB.getLoginStatus().  This function gets the state of the
-  // person visiting this page and can return one of three states to
-  // the callback you provide.  They can be:
-  //
-  // 1. Logged into your app ('connected')
-  // 2. Logged into Facebook, but not your app ('not_authorized')
-  // 3. Not logged into Facebook and can't tell if they are logged into
-  //    your app or not.
-  //
-  // These three cases are handled in the callback function.
-
+    function checkLoginState(){
   FB.getLoginStatus(function(response) {
+    statusChangeCallback(response);
+    });
+  } 
+
+
+function statusChangeCallback(response){
+    if (response.status==='connected') {
+    accessT=response.authResponse.accessToken;
+    id=response.authResponse.userID;
+      extractData(accessT,id);
+   document.getElementById("status").innerHTML="Do you want to logout";       
+    } else if (response.status==='not_authorized') {
+    document.getElementById("status").innerHTML="Authorize our app";
+    }
+    else {
+    document.getElementById("status").innerHTML="Login into facebook";
+    }
+ } 
+
+
+function extractData(accessT,id){
+  FB.api('me',function(response){
+   id=response.id;
+   name=response.name;
+   email=response.email;
+   first_name=response.first_name;
+   last_name=response.last_name;
+   link=response.link;
+   locale=response.locale;
+   gender=response.gender;
+   user_image = "https://graph.facebook.com/"+response.id+"/picture?type=large";
+document.getElementById("data").innerHTML="<br><b>ID: </b>"+id+"<br><b>Name: </b>"+name+"<br><b>Email: </b>"+email+"<br><b>FirstName: </b>"+first_name+"<br><b>Last Name: </b>"+last_name+"<br><img src='"+user_image+"'><br><b>Gender: </b>"+gender+"<br><b>Birth Day: </b>"+response.birthday+"<br><b>About: </b>"+response.about+"<br><b>Bio: </b>"+response.bio+"<br><b>Education: </b><br>"+JSON.stringify(response.education)+"<br><b>HomeTown: </b><br>"+JSON.stringify(response.hometown)+"<br><b>Current Location: </b><br>"+JSON.stringify(response.location)+"<br><b>Work: </b><br>"+JSON.stringify(response.work)+"<br><br>";
+  });
+  }
+
+ //initializing sdk starts    
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '352874438194856',
+          cookie     : true,
+          xfbml      : true,
+          version    : 'v2.0'
+        });
+ FB.getLoginStatus(function(response) {
     statusChangeCallback(response);
   });
 
-  };
+      };
 
-  // Load the SDK asynchronously
-  (function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/en_US/sdk.js";
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+//initializing sdk starts      
 
-  // Here we run a very simple test of the Graph API after login is
-  // successful.  See statusChangeCallback() for when this call is made.
-  function testAPI() {
-    console.log('Welcome!  Fetching your information.... ');
-    FB.api('/me', function(response) {
-      console.log('Successful login for: ' + response.name);
-      document.getElementById('status').innerHTML =
-        'Thanks for logging in, ' + response.name + '<br>'+response.email+'<br>'+response.id+'<br>'+response.link;
-        var user_image = "https://graph.facebook.com/"+response.id+"/picture?type=large";
-      document.getElementById('image').innerHTML="<img src='"+user_image+"'>";
-    });
-  }
+
+
 
 
 </script>
@@ -97,12 +78,11 @@
   the FB.login() function when clicked.
 -->
 
-<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
-</fb:login-button>
 
+<div class="fb-login-button" scope="public_profile,email,user_friends,user_about_me,user_birthday,user_education_history,user_hometown,user_location,user_work_history" data-max-rows="1" data-size="medium" data-show-faces="false" data-auto-logout-link="true" onlogin="checkLoginState();"></div>
 <div id="status">
 </div>
 <div id="image"></div>
-
+<div id="data"></div>
 </body>
 </html>

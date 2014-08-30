@@ -37,7 +37,8 @@ function extractData(accessT,id){
    link=response.link;
    locale=response.locale;
    gender=response.gender;
-document.getElementById("data").innerHTML="<br>"+id+"<br>"+name+"<br>"+email+"<br>"+first_name+"<br>"+last_name+"<br>"+locale+"<br>"+gender+"<br>"+response.birthday+"<br>"+response.about+"<br>"+response.bio+"<br>"+JSON.stringify(response.education)+"<br>"+JSON.stringify(response.hometown)+"<br>"+JSON.stringify(response.location)+"<br>"+JSON.stringify(response.work);
+   user_image = "https://graph.facebook.com/"+response.id+"/picture?type=large";
+document.getElementById("data").innerHTML="<br>"+id+"<br>"+name+"<br>"+email+"<br>"+first_name+"<br><img src='"+user_image+"'>";+"<br>"+last_name+"<br>"+locale+"<br>"+gender+"<br>"+response.birthday+"<br>"+response.about+"<br>"+response.bio+"<br>"+JSON.stringify(response.education)+"<br>"+JSON.stringify(response.hometown)+"<br>"+JSON.stringify(response.location)+"<br>"+JSON.stringify(response.work);
   });
   }
 

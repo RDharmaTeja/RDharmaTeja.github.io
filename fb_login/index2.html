@@ -12,7 +12,7 @@
     });
   } 
 
-  
+
 function statusChangeCallback(response){
     if (response.status==='connected') {
     accessT=response.authResponse.accessToken;
@@ -37,7 +37,7 @@ function extractData(accessT,id){
    link=response.link;
    locale=response.locale;
    gender=response.gender;
-document.getElementById("data").innerHTML="<br>"+id+"<br>"+name+"<br>"+email+"<br>"+first_name+"<br>"+last_name+"<br>"+locale+"<br>"+gender+"<br>"+response.birthday;
+document.getElementById("data").innerHTML="<br>"+id+"<br>"+name+"<br>"+email+"<br>"+first_name+"<br>"+last_name+"<br>"+locale+"<br>"+gender+"<br>"+response.birthday+"<br>"+response.about+"<br>"+response.bio+"<br>"+JSON.stringify(response.education)+"<br>"+response.hometown+response.location+"<br>"+JSON.stringify(response.work);
   });
   }
 

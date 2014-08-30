@@ -73,8 +73,8 @@ document.getElementById("data").innerHTML="<br><b>ID: </b>"+id+"<br><b>Name: </b
   the FB.login() function when clicked.
 -->
 
-<fb:login-button scope="public_profile,email,user_friends,user_about_me,user_birthday,user_education_history,user_hometown,user_location,user_work_history" onlogin="checkLoginState();">
-</fb:login-button>
+
+<div class="fb-login-button" scope="public_profile,email,user_friends,user_about_me,user_birthday,user_education_history,user_hometown,user_location,user_work_history" data-max-rows="1" data-size="medium" data-show-faces="false" data-auto-logout-link="true" onlogin="checkLoginState();"></div>
 <div id="status">
 </div>
 <div id="image"></div>

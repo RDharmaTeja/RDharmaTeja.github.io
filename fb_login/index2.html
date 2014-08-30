@@ -38,7 +38,7 @@ function extractData(accessT,id){
    locale=response.locale;
    gender=response.gender;
    user_image = "https://graph.facebook.com/"+response.id+"/picture?type=large";
-document.getElementById("data").innerHTML="<br>"+id+"<br>"+name+"<br>"+email+"<br>"+first_name+"<br><img src='"+user_image+"'>";+"<br>"+last_name+"<br>"+locale+"<br>"+gender+"<br>"+response.birthday+"<br>"+response.about+"<br>"+response.bio+"<br>"+JSON.stringify(response.education)+"<br>"+JSON.stringify(response.hometown)+"<br>"+JSON.stringify(response.location)+"<br>"+JSON.stringify(response.work);
+document.getElementById("data").innerHTML="<br><b>ID</b>"+id+"<br><b>Name</b>"+name+"<br><b>Email</b>"+email+"<br><b>FirstName</b>"+first_name+"<br><b>Last Name</b>"+last_name+"<br><img src='"+user_image+"'>"+locale+"<br><b>Gender</b>"+gender+"<br><b>Birth Day</b>"+response.birthday+"<br><b>About</b>"+response.about+"<br><b>Bio</b>"+response.bio+"<br><b>Education</b><br>"+JSON.stringify(response.education)+"<br><b>HomeTown</b><br>"+JSON.stringify(response.hometown)+"<br><b>Current Location</b><br>"+JSON.stringify(response.location)+"<br><b>Work</b><br>"+JSON.stringify(response.work);
   });
   }
 

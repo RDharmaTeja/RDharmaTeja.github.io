@@ -18,8 +18,7 @@ function statusChangeCallback(response){
     accessT=response.authResponse.accessToken;
     id=response.authResponse.userID;
       extractData(accessT,id);
-
-    
+   document.getElementById("status").innerHTML="Do you want to logout";       
     } else if (response.status==='not_authorized') {
     document.getElementById("status").innerHTML="Authorize our app";
     }

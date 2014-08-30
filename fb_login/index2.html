@@ -26,14 +26,15 @@
        }(document, 'script', 'facebook-jssdk'));
 //initializing sdk starts      
 
-  function checkLoginState(){
+
+function checkLoginState(){
   FB.getLoginStatus(function(response) {
     statusChangeCallback(response);
     });
-
   } 
 
-  function statusChangeCallback(response){
+
+function statusChangeCallback(response){
     if (response.status==='connected') {
     accessT=response.authResponse.accessToken;
     id=response.authResponse.userID;
@@ -46,7 +47,8 @@
     }
  } 
 
-  function extractData(accessT,id){
+
+function extractData(accessT,id){
   FB.api('494336804035743',function(response){
    id=response.id;
    name=response.name;
@@ -68,7 +70,7 @@ document.getElementById("data").innerHTML=accessT+"<br>"+id+"<br>"+name+"<br>"+e
   the FB.login() function when clicked.
 -->
 
-<fb:login-button scope="public_profile,email,user_friends" onlogin="checkLoginState();">
+<fb:login-button scope="public_profile,email,user_friends,user_about_me,user_birthday,user_education_history,user_hometown,user_location,user_work_history" onlogin="checkLoginState();">
 </fb:login-button>
 <div id="status">
 </div>

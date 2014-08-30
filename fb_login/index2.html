@@ -6,7 +6,8 @@
 </head>
 <body>
 <script>
-     
+    
+ //initializing sdk starts    
       window.fbAsyncInit = function() {
         FB.init({
           appId      : '352874438194856',
@@ -23,7 +24,8 @@
          js.src = "//connect.facebook.net/en_US/sdk.js";
          fjs.parentNode.insertBefore(js, fjs);
        }(document, 'script', 'facebook-jssdk'));
-    
+//initializing sdk starts      
+
   function checkLoginState(){
   FB.getLoginStatus(function(response) {
     statusChangeCallback(response);

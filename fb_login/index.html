@@ -88,12 +88,6 @@
     });
   }
 
-  function ask_friends(){
-FB.login(function(response) {
-   console.log(response);
- }, {scope: 'user_friends'});
-
-  }
 
 </script>
 
@@ -105,7 +99,6 @@ FB.login(function(response) {
 
 <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
 </fb:login-button>
-<a href="#" onclick="ask_friends();">friends</a>
 
 <div id="status">
 </div>

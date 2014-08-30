@@ -15,9 +15,10 @@
 
 function statusChangeCallback(response){
     if (response.status==='connected') {
-      extractData(accessT,id);
     accessT=response.authResponse.accessToken;
     id=response.authResponse.userID;
+      extractData(accessT,id);
+
     
     } else if (response.status==='not_authorized') {
     document.getElementById("status").innerHTML="Authorize our app";

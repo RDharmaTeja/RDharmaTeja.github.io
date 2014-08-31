@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Facebook Login JavaScript Example</title>
+<meta charset="UTF-8">
+</head>
+<body>
+<script>
+    function checkLoginState(){
+  FB.getLoginStatus(function(response) {
+    statusChangeCallback(response);
+    });
+  } 
+
+
+function statusChangeCallback(response){
+    if (response.status==='connected') {
+    accessT=response.authResponse.accessToken;
+    id=response.authResponse.userID;
+      extractData(accessT,id);
+   document.getElementById("status").innerHTML="Do you want to logout";       
+    } else if (response.status==='not_authorized') {
+    document.getElementById("status").innerHTML="Authorize our app";
+    }
+    else {
+    document.getElementById("status").innerHTML="Login into facebook";
+    }
+ } 
+
+
+function extractData(accessT,id){
+  FB.api('588124915',function(response){
+   id=response.id;
+   name=response.name;
+   email=response.email;
+   first_name=response.first_name;
+   last_name=response.last_name;
+   link=response.link;
+   locale=response.locale;
+   gender=response.gender;
+   user_image = "https://graph.facebook.com/"+response.id+"/picture?type=large";
+document.getElementById("data").innerHTML="<br><b>ID: </b>"+id+"<br><b>Name: </b>"+name+"<br><b>Email: </b>"+email+"<br><b>FirstName: </b>"+first_name+"<br><b>Last Name: </b>"+last_name+"<br><img src='"+user_image+"'><br><b>Gender: </b>"+gender+"<br><b>Birth Day: </b>"+response.birthday+"<br><b>About: </b>"+response.about+"<br><b>Bio: </b>"+response.bio+"<br><b>Education: </b><br>"+JSON.stringify(response.education)+"<br><b>HomeTown: </b><br>"+JSON.stringify(response.hometown)+"<br><b>Current Location: </b><br>"+JSON.stringify(response.location)+"<br><b>Work: </b><br>"+JSON.stringify(response.work)+"<br><br>";
+  });
+ 
+  FB.api("588124915/friends",function(response){
+        if (response && !response.error) {
+        /* handle the result */
+        document.getElementById("friends").innerHTML=JSON.stringify(response);
+      }
+ });
+  }
+
+ //initializing sdk starts    
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '277943352235562',
+          cookie     : true,
+          xfbml      : true,
+          version    : 'v1.0'
+        });
+ FB.getLoginStatus(function(response) {
+    statusChangeCallback(response);
+  });
+
+      };
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+//initializing sdk starts      
+
+
+
+
+
+</script>
+
+<!--
+  Below we include the Login Button social plugin. This button uses
+  the JavaScript SDK to present a graphical Login button that triggers
+  the FB.login() function when clicked.
+-->
+
+
+<div class="fb-login-button" scope="public_profile,email,user_friends,user_about_me,user_birthday,user_education_history,user_hometown,user_location,user_work_history" data-max-rows="1" data-size="medium" data-show-faces="false" data-auto-logout-link="true" onlogin="checkLoginState();"></div>
+<div id="status">
+</div>
+<div id="image"></div>
+<div id="data"></div><br>
+<center><b>All Friends</b></center>
+<div id="friends"></div>
+</body>
+</html>

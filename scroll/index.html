@@ -1,0 +1,265 @@
+<!doctype html>
+<html ng-app="scrollApp" ng-controller="scrollController" >
+<head>
+	<title>
+		One page scroll in  angular
+		</title>
+<link href='foundation.css' rel='stylesheet' type='text/css'>
+<style>
+	
+.my-slide-container {
+  position:relative;
+  height:100%;
+  overflow: hidden;
+}
+/*to move from bottom*/
+.my-slide-animation.ng-enter, .my-slide-animation.ng-leave {
+  -webkit-transition:1s ease-in-out all;
+  transition:1s ease all;
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  height:100%;
+}
+
+.my-slide-animation.ng-enter {
+  top:100%;
+  opacity:1;
+}
+.my-slide-animation.ng-enter.ng-enter-active {
+  top:0;
+  opacity:1;
+}
+
+.my-slide-animation.ng-leave {
+  top:0;
+  opacity:1;
+}
+.my-slide-animation.ng-leave.ng-leave-active {
+  top:-100%;
+  opacity:1;
+}
+
+/*to move from top*/
+.my-slide-animation2.ng-enter,.my-slide-animation2.ng-leave{
+  -webkit-transition:1s ease all;
+  transition:1s ease-in-out all;
+  position:absolute;
+  bottom:0;
+  left:0;
+  right:0;
+  height:100%;
+	
+	}
+.my-slide-animation2.ng-enter {
+  top:-100%;
+  opacity:1;
+}
+.my-slide-animation2.ng-enter.ng-enter-active {
+  top:0;
+  opacity:1;
+}
+
+.my-slide-animation2.ng-leave {
+  top:0px;
+  opacity:1;
+}
+.my-slide-animation2.ng-leave.ng-leave-active {
+  top:100%;
+  opacity:1;
+}
+
+
+
+
+
+
+
+.my-slide-animation,.my-slide-animation2{
+	  width: 100%;
+     height: 100%;
+	}
+	
+.main{
+		  width: 100%;
+  height: 100%;
+	}
+/* container styles*/
+body, html {
+  margin: 0;
+  height:100%;
+  -webkit-transition: opacity 400ms;
+  -moz-transition: opacity 400ms;
+  transition: opacity 400ms;
+}
+
+body, .wrapper, html {
+  display: block;
+  position: static;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+  padding: 0;
+  -webkit-transform-style: preserve-3d;
+}
+
+
+section {
+  width: 100%;
+  height: 100%;
+}
+
+    section  {
+      overflow: hidden;
+    }    
+    section.page1 {
+      background:#5fbca9;
+      height:100%;      
+    }
+
+    section.page2 {
+      background:#374b5f;
+    }    
+    section.page3 {
+      background:#5fbca9;
+    }
+	
+	</style>	
+	
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-animate.js"></script>
+	<script>
+		var scrollApp=angular.module('scrollApp',['ngAnimate']);
+        
+        scrollApp.controller("scrollController",function($scope){
+			   
+			   $scope.myExp='1';//stores page number
+			   $scope.myClass='my-slide-animation';//initial stores class
+			   $scope.noPage=4;//no of pages
+			   
+			   // arrow event
+			   $scope.keydown=function ($event){
+				   //alert("keydown:"+$event.keyCode);
+				   if(($event.keyCode===38||$event.keyCode===37)&&$scope.myExp!='1')
+				   {
+				   	$scope.myClass='my-slide-animation2';  
+				   $scope.myExp=(parseInt($scope.myExp)-1).toString();			        
+			          }
+			       else if($event.keyCode===38&&$scope.myExp=='1')
+			       alert("Go opposite direction");   
+				   
+				   if(($event.keyCode===40||$event.keyCode===39)&&$scope.myExp!='4')
+				    {  
+					   $scope.myClass='my-slide-animation';	 
+					   $scope.myExp=(parseInt($scope.myExp)+1).toString();
+					   }
+				   else if($event.keyCode===40&&$scope.myExp=='4')
+				   alert("Reached End, Go back");    				   
+				   }
+			
+				//css change on click   
+			   $scope.cssSet=function(n){
+				   if(parseInt($scope.myExp)<n)
+				   $scope.myClass='my-slide-animation'; 
+				   else if(parseInt($scope.myExp)>n)
+				   $scope.myClass='my-slide-animation2';	
+				   }
+				   
+			   //button disabling
+			   $scope.disable=function(n){
+				   if(parseInt($scope.myExp)==n)
+				   return true;
+				   else 
+				   return false;
+				   }
+				   
+				//add element   
+			   $scope.addPage=function(n){
+				   //n = current total pages 
+				   var page=""
+				   
+				   }
+			   
+			   });  
+             
+		</script>
+		
+</head>
+<body id='key-action'  ng-keydown="keydown($event);">
+
+<div  class='main'>
+
+  <div class="my-slide-container">
+    <div ng-include="myExp" ng-class="myClass" ></div>    
+  </div>
+  
+  <center><div style="position:absolute; left:35%;top:300px;">
+  <button class="secondary" ng-disabled="disable(1);" ng-click="cssSet(1);myExp='1'">One</button>
+  <button class="secondary" ng-disabled="disable(2);" ng-click="cssSet(2);myExp='2'">Two</button>
+  <button class="secondary" ng-disabled="disable(3);" ng-click="cssSet(3);myExp='3'">Three</button>
+  <button class="secondary" ng-disabled="disable(4);" ng-click="cssSet(4);myExp='4'">Four</button>
+  </div></center>
+  
+</div>
+
+<div id='pages'>
+<script src="../index2.html" type="text/ng-template" id="1">
+      
+      <section class="page1">
+        <div class="page_container">
+        <br><br><br><br>
+      <br><br>
+        <center><h3>PAGE 1: CAN MOVE USING ARROWS<br>MADE USING ANGULAR AND CSS3 | NO JQUERY</h3></center>
+	</div>
+      </section>
+</script>
+
+
+<script type="text/ng-template" id="2">
+
+  	    <section class="page2">
+	      <div class="page_container">
+	      	 <br><br><br><br>
+      <br><br><br><br>
+	     <center><h3>PAGE 2: CAN MOVE USING ARROWS<br>MADE USING ANGULAR AND CSS3| NO JQUERY</h3></center>
+</div>
+      </section>
+</script>
+
+
+
+<script type="text/ng-template" id="3">
+
+ 	    <section class="page3">
+ 	    	 <br><br><br><br>
+      <br><br><br><br>
+	      <div class="page_container">			  
+<center><h3>PAGE 3: CAN MOVE USING ARROWS<br>MADE USING ANGULAR AND CSS3| NO JQUERY</h3></center>
+  	    </div>
+      </section>
+</script>
+
+<script type="text/ng-template" id="4">
+
+ 	    <section class="page2">
+ 	    	 <br><br><br><br>
+      <br><br><br><br>
+	      <div class="page_container">			  
+<center><h3>PAGE 4: CAN MOVE USING ARROWS<br>MADE USING ANGULAR AND CSS3| NO JQUERY</h3></center>
+  	    </div>
+      </section>
+</script>
+
+</div>
+
+	</body>
+	</html>

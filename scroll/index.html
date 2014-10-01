@@ -156,7 +156,7 @@ section {
 			   // arrow event
 			   $scope.keydown=function ($event){
 				   //alert("keydown:"+$event.keyCode);
-				   if(($event.keyCode===38||$event.keyCode===37)&&$scope.myExp!='1')
+				   if(($event.keyCode===38||$event.keyCode===37||$event.keyCode===13)&&$scope.myExp!='1')
 				   {
 				   	$scope.myClass='my-slide-animation2';  
 				   $scope.myExp=(parseInt($scope.myExp)-1).toString();			        
@@ -189,12 +189,56 @@ section {
 				   return false;
 				   }
 				   
-				//add element   
-			   $scope.addPage=function(n){
-				   //n = current total pages 
-				   var page=""
-				   
-				   }
+   
+				//on wheel scroll
+		// sol on http://www.jeffryhouser.com/index.cfm/2014/6/2/How-do-I-run-code-when-a-variable-changes-with-AngularJS				
+			  var scroll=document.getElementById("key-action");
+			  var count=0;
+			  var setTime;
+			  if (scroll.addEventListener) {
+	         // IE9, Chrome, Safari, Opera
+	         scroll.addEventListener("mousewheel",MouseWheelHandler, false);
+	         // Firefox
+	         scroll.addEventListener("DOMMouseScroll",MouseWheelHandler, false);
+             }
+             // IE 6/7/8
+             else scroll.attachEvent("onmousewheel",MouseWheelHandler);	
+         
+             function MouseWheelHandler(e){
+				 
+				 	// cross-browser wheel delta
+	                var e = window.event || e; // old IE support
+	                var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
+	                
+	                
+	                if(count==0)
+					setTimeout(function(){count=0;},1000);
+	                
+	                if(delta==-1)
+	                {	 
+                       count=count-1;                       
+						}
+					else count++;	
+					
+					
+					if(count==-1||count==1){
+					 if(count<0&&$scope.myExp!='4')
+				   {   
+					   console.log(count);
+					 $scope.$apply(function(){					 
+					 $scope.myClass='my-slide-animation';	 
+					 $scope.myExp=(parseInt($scope.myExp)+1).toString();
+				      });
+					 }
+				 else if(count>0&&$scope.myExp!='1'){
+					   $scope.$apply(function(){					 
+					 $scope.myClass='my-slide-animation2';	 
+					 $scope.myExp=(parseInt($scope.myExp)-1).toString();
+				      });
+					    
+					 }					  	  							
+						}																				 
+				 }
 			   
 			   });  
              

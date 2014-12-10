@@ -47,7 +47,7 @@ function addBall(){
   var rndColor=Math.floor((Math.random() * 9) + 1);
   var rndX=Math.floor((Math.random() * 8) + 1);
   var rndY=Math.floor((Math.random() * 8) + 1);
-  ball[count]= new Ball(Math.floor((Math.random() * 490) + 1),Math.floor((Math.random() * 490)+1),Math.floor((Math.random() * 10) + 5),color[rndColor],rndX,rndY);
+  ball[count]= new Ball(Math.floor((Math.random() * 490) + 1),Math.floor((Math.random() * 490)+1),10,color[rndColor],rndX,rndY);
   count++;
   document.getElementById("noBalls").innerHTML="<b>"+count+"</b>";
 }

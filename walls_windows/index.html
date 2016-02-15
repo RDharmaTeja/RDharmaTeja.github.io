@@ -1,0 +1,386 @@
+<!doctype html>
+<html class="no-js" lang="en">
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Visual Display of Wall</title>
+      <link rel="stylesheet" href="lib/foundation.min.css" />
+      <script src="lib/jquery-1.10.2.js"></script>
+      <script src='lib/three.min.js'></script>
+      <style>
+         canvas {
+         width: 100%;
+         height: 100%;
+         pointer-events: none;
+         }
+         #box canvas {
+         position: relative;
+         z-index: 1;
+         }
+      </style>
+      <script>
+         //login check
+         height =0; width =0,win_h=0,win_w=0,wall=[],fullMesh=new THREE.Object3D,border =0;;
+         prev_rot =0;
+         function generate(){
+         	height =0; width =0,wall=[];
+         	//generates wall sequence
+         	height = parseInt($("#height").val());
+         	width = parseInt($("#width").val());
+         	win_h = parseInt($("#win_height").val());
+         	win_w = parseInt($("#win_width").val());
+         	border = parseFloat($("#bri_border").val());			
+         	for(i =0; i<height;i++)
+         		wall[i] = [];
+         	i =0;
+         	for(; i <= width-2;i=i+2)
+         		wall[0].push(2);
+         	if(i != width)
+         		wall[0].push(1);
+         	if(width >= 4)
+         		{
+         			wall[0][0]= 4;
+         			wall[0][1] =0;
+         		}
+         	wall[1].push(1);
+         	i =1;
+         	for(; i <= width-2;i=i+2)
+         		wall[1].push(2);
+         	if(i != width)
+         		wall[1].push(1);
+         
+         	// randomly placing four block
+         	var len = wall[0].length;
+         	var rand = Math.floor((Math.random() * (len-2)));
+         	if(wall[0][rand] == wall[0][rand+1] && wall[0][rand] == 2){
+         		wall[0][rand] = 4;
+         		wall[0][rand+1] =0;
+         	}
+         	len = wall[1].length;
+         	rand = Math.floor((Math.random() * (len-2)));
+         	if(wall[1][rand] == wall[1][rand+1] && wall[1][rand] == 2){
+         		wall[1][rand] = 4;
+         		wall[1][rand+1] =0;
+         	}
+         
+         
+         	// if now window is given 
+         	if(win_h == 0 && win_w ==0){
+         	for(i=2;i<height;i++){
+         		var count = 0;
+         		while(count != width)
+         		{
+         			max = width - count;
+         			if(max > 3)
+         			rand = Math.floor((Math.random() * 4) + 1);
+         			else
+         			rand = Math.floor((Math.random() * max) + 1);
+         			wall[i].push(rand);
+         			count += rand;
+         		}
+         	}
+         	//buff = wall[height-1];
+         	//wall[height-1] = wall[0];
+         	//wall[0] =buff; 			
+         	}
+         	// window is given
+         	else{
+         		var buf = wall[height-1];
+         		wall[height-1] = wall[1];
+         		wall[1] = buf; 
+         		// window is placed at the center of wall
+         		var row_start = Math.floor((Math.random() * (height-win_h-1)) + 1); 
+         		var row_stop = row_start+win_h-1;
+         		var col_start = Math.floor((Math.random() * (width-win_w-1)) + 1);;
+         		var col_stop = col_start+win_w-1;
+         		// randomly placing for rows without windows 
+         		for(i = 1; i< row_start;i++){
+         		var count = 0;
+         		while(count != width)
+         		{
+         			max = width - count;
+         			if(max > 3)
+         			rand = Math.floor((Math.random() * 4) + 1);
+         			else
+         			rand = Math.floor((Math.random() * max) + 1);
+         			wall[i].push(rand);
+         			count += rand;
+         		}
+         		}
+         		for(i = row_stop+1; i< height-1;i++){
+         		var count = 0;
+         		while(count != width)
+         		{
+         			max = width - count;
+         			if(max > 3)
+         			rand = Math.floor((Math.random() * 4) + 1);
+         			else
+         			rand = Math.floor((Math.random() * max) + 1);
+         			wall[i].push(rand);
+         			count += rand;
+         		}
+         		}
+         		for(i = row_start; i<= row_stop; i++){
+         
+         			var cur_width = col_start;
+         			var count = 0;
+         			while(count != cur_width)
+         			{
+         			max = cur_width - count;
+         			if(max > 3)
+         			rand = Math.floor((Math.random() * 4) + 1);
+         			else
+         			rand = Math.floor((Math.random() * max) + 1);
+         			wall[i].push(rand);
+         			count += rand;
+         			} 
+         			for(j = col_start;j<=col_stop;j++){
+         				wall[i].push(-1);
+         			}
+         			cur_width = width - col_stop -1;
+         			count = 0;
+         			while(count != cur_width)
+         			{
+         			max = cur_width - count;
+         			if(max > 3)
+         			rand = Math.floor((Math.random() * 4) + 1);
+         			else
+         			rand = Math.floor((Math.random() * max) + 1);
+         			wall[i].push(rand);
+         			count += rand;
+         			} 
+         		}
+         
+         	}
+         	// changing the 2 rows randomly
+         	if(win_h == 0){
+         	rand = Math.floor((Math.random() * height));
+         	buff = wall[rand];
+         	wall[rand] = wall[0];
+         	wall[0] = buff;
+         	rand = Math.floor((Math.random() * height));
+         	buff = wall[rand];
+         	wall[rand] = wall[1];
+         	wall[1] = buff;
+         	}
+         	draw();
+         	
+         }
+         function draw(){
+         	var box_width  = 20;
+         	var box_height = 7;
+         	var box_depth = 20;
+         	var seperation = (win_h==0)?border:border;
+         	var clr1 = 0x66ae65, clr2 = 0xd66676, clr3 = 0x784692,clr4= 0x3c4997;
+         	var geometry = new THREE.BoxGeometry( 30, 10, 10 );
+         		var material = new THREE.MeshBasicMaterial( {color: 0x00ff00} );
+         		var cube = new THREE.Mesh( geometry, material );
+         		//scene.add( cube );
+         	var cube_1 = new THREE.Mesh(new THREE.BoxGeometry( 1*box_width, box_height, box_depth ), new THREE.MeshLambertMaterial( {color: clr1} ));
+         	var outlineMaterial2 = new THREE.MeshBasicMaterial( { color: 0x000000, side: THREE.BackSide } );
+         	var outlineMesh2 = new THREE.Mesh( new THREE.BoxGeometry( 1*box_width, box_height, box_depth ), outlineMaterial2 );
+         	outlineMesh2.scale.multiplyScalar(1.07);
+         	//cube_1.add(outlineMesh2);
+         //scene.add( outlineMesh2 );
+         	var cube_2 = new THREE.Mesh(new THREE.BoxGeometry( 2*box_width, box_height, box_depth ), new THREE.MeshLambertMaterial( {color: clr2} ));
+         	outlineMesh2 = new THREE.Mesh( new THREE.BoxGeometry( 2*box_width, box_height, box_depth ), outlineMaterial2 );
+         	outlineMesh2.scale.multiplyScalar(1.05);
+         	//cube_2.add(outlineMesh2);
+         	var cube_3 = new THREE.Mesh(new THREE.BoxGeometry( 3*box_width, box_height, box_depth ), new THREE.MeshLambertMaterial( {color: clr3} ));
+         	outlineMesh2 = new THREE.Mesh( new THREE.BoxGeometry( 3*box_width, box_height, box_depth ), outlineMaterial2 );
+         	outlineMesh2.scale.multiplyScalar(1.05);
+         	//cube_3.add(outlineMesh2);
+         	var cube_4 = new THREE.Mesh(new THREE.BoxGeometry( 4*box_width, box_height, box_depth ), new THREE.MeshLambertMaterial( {color: clr4} ));
+         	outlineMesh2 = new THREE.Mesh( new THREE.BoxGeometry( 4*box_width, box_height, box_depth ), outlineMaterial2 );
+         	outlineMesh2.scale.multiplyScalar(1.05);
+         	//cube_4.add(outlineMesh2);
+         	var cube_5 = new THREE.Mesh(new THREE.BoxGeometry(seperation, box_height, box_depth ), new THREE.MeshBasicMaterial( {color: 0x000000} ));
+         	scene.remove(fullMesh);	
+         
+         	fullMesh = new THREE.Object3D;
+         	
+         	//fullMesh.add(cube_4);
+         	//cube_3.position.set(50,20,0);
+         
+         	//fullMesh.add(cube_3);
+         	
+         	for( i = 0; i< height;i++){
+         		var right = 0;
+         		var top = (win_h==0)?i*(box_height+seperation):i*box_height;
+         		var cols = wall[i].length;
+         		for(j =0; j< cols;j++){
+         			if(wall[i][j] == 1){
+         				var brick = cube_1.clone();
+         				brick.position.set(right+box_width/2,  top+ box_height/2,0);
+         				right += box_width;
+         				fullMesh.add(brick);
+         			}
+         			else if(wall[i][j] == 2){
+         				var brick = cube_2.clone();
+         				brick.position.set(right+box_width, top + box_height/2,0);
+         				right += box_width*2;
+         				fullMesh.add(brick);	
+         
+         			}
+         			else if(wall[i][j] == 3){
+         				var brick = cube_3.clone();
+         				brick.position.set(right+3*box_width/2, top + box_height/2,0);
+         				right += box_width*3;
+         				fullMesh.add(brick);
+         				
+         			}
+         			else if(wall[i][j] == 4){
+         				var brick = cube_4.clone();
+         				brick.position.set(right+4*box_width/2, top + box_height/2,0);
+         				right += box_width*4;
+         				fullMesh.add(brick);
+         				
+         			}
+         
+         			if(wall[i][j] != -1 && j != cols-1){
+         				var brick = cube_5.clone();
+         				brick.position.set(right+seperation/2, top + box_height/2,0);
+         				right += seperation;
+         				fullMesh.add(brick);
+         			}
+         			if(wall[i][j] == -1 && win_h != 0 && win_h!= height-1 && i != 0){
+         				right += box_width;
+         			}
+         		}
+         		right =0;
+         		if(i != height && win_h ==0){
+         			var brick = new THREE.Mesh(new THREE.BoxGeometry(width*box_width, seperation, box_depth ), new THREE.MeshBasicMaterial( {color: 0x000000} ));
+         			brick.position.set(right+width*box_width/2,top+box_height+seperation/2,0); 
+         			fullMesh.add(brick);
+         		}
+         
+         	}
+         	fullMesh.rotation.y = prev_rot;
+         	fullMesh.position.set(-width*box_width/2, -height*box_height/2,0 )
+         		scene.add(fullMesh);
+         		renderer.render( scene, camera );
+         }
+      </script>
+   <body>
+      <center>
+         <h4>Visual model of the wall with/without window</h4>
+      </center>
+      <div class="row">
+         <div class="large-2 columns">
+            <label><b>Wall Height</b></label>
+            <input id='height' type="number" value="5" placeholder="5" />
+         </div>
+         <div class="large-2 columns">
+            <label><b>Wall Width</b></label>
+            <input id='width' type="number" value="5" placeholder="5" />
+         </div>
+         <div class="large-2 columns">
+            <label><b>Window Height</b></label>
+            <input id='win_height' type="number" value="0" placeholder="0" />
+         </div>
+         <div class="large-2 columns">
+            <label><b>Window Width</b></label>
+            <input id='win_width' type="number" value="0" placeholder="0" />
+         </div>
+         <div class="large-2 columns">
+            <label><b>Border</b></label>
+            <input id='bri_border' type="text" value="0" placeholder="0" />
+         </div>
+         <div id='center' class="large-2 columns">
+            <br>
+            <center> <button onclick='generate()' class='button small'>Draw</button>
+            </center>
+         </div>
+      </div>
+      <div class="row">
+         <div class= "large-3 columns" style="color:#66ae65">
+            <b>1-BLOCK</b>
+         </div>
+         <div class= "large-3 columns" style="color:#d66676">
+            <b>2-BLOCK</b>
+         </div>
+         <div class= "large-3 columns" style="color:#784692">
+            <b>3-BLOCK</b>
+         </div>
+         <div class= "large-3 columns" style="color:#3c4997">
+            <b>4-BLOCK</b>
+         </div>
+      </div>
+      <center>
+         <div id="box"></div>
+      </center>
+      <div class= "row large-12 columns">
+         <center>**Change the orientation of wall using <b>q,w,e,a,s,d</b></center>
+         <br><br>
+      </div>
+      <script>
+         scene = new THREE.Scene();
+         // set the view size in pixels (custom or according to window size)
+         // var SCREEN_WIDTH = 400, SCREEN_HEIGHT = 300;
+         	var SCREEN_WIDTH = window.innerWidth, SCREEN_HEIGHT = window.innerHeight;
+         // camera attributes
+         var VIEW_ANGLE = 45, ASPECT = SCREEN_WIDTH / SCREEN_HEIGHT, NEAR = 0.1, FAR = 20000;
+         // set up camera
+         camera = new THREE.PerspectiveCamera( VIEW_ANGLE, ASPECT, NEAR, FAR);
+         // add the camera to the scene
+         scene.add(camera);
+         camera.position.set(-100,0,250);
+         	camera.lookAt(scene.position);
+         renderer = new THREE.WebGLRenderer( {antialias:true} );
+         renderer.setSize(SCREEN_WIDTH*0.8, SCREEN_HEIGHT*0.8);
+         renderer.setClearColor('rgb(190, 190, 190)'); // blue background
+         // attach div element to variable to contain the renderer
+         container = document.getElementById( 'box' );
+         // alternatively: to create the div at runtime, use:
+         //   container = document.createElement( 'div' );
+         //    document.body.appendChild( container );
+         
+         // attach renderer to the container div
+         container.appendChild( renderer.domElement );
+         	// create a light
+         var light = new THREE.PointLight(0xffffff);
+         light.position.set(-150,100,150);
+         scene.add(light);
+         var light2 = light.clone();
+         light2.position.set(150,-100,150);
+         light2.intensity = 0.5;
+         scene.add(light2);
+         var ambientLight = new THREE.AmbientLight(0x000000);
+         ambientLight.position.set(-150,0,150);
+         //scene.add(ambientLight);
+         
+         //////////////
+         renderer.render( scene, camera );
+         
+         $("html").keypress(function (event) {
+         if (event.which == 119) {
+                         camera.position.z -= 10;
+                         renderer.render(scene, camera);
+                     }
+                     else if (event.which == 115) {
+                         camera.position.z += 10;
+                         renderer.render(scene, camera);
+                     }
+                     else if (event.which == 100) {
+                         camera.position.x += 10;
+                         renderer.render(scene, camera);
+                     }
+                     else if (event.which == 97) {
+                         camera.position.x -= 10;
+                         renderer.render(scene, camera);
+                     }
+                     else if(event.which == 113){
+                     	fullMesh.rotation.y += 0.015;
+                     	prev_rot = fullMesh.rotation.y;
+                     	renderer.render(scene, camera);
+                     }
+                      else if(event.which == 101){
+                     	fullMesh.rotation.y -=  0.015;
+                     	prev_rot = fullMesh.rotation.y;
+                     	renderer.render(scene, camera);
+                     }
+         
+         });
+      </script>
+   </body>
+</html>

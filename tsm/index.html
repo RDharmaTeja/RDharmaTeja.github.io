@@ -68,7 +68,7 @@
 </div>
  
 <br>
-<div class="row">
+<div class="row">    
 <div class="medium-7 large-9 columns" id="map" style="width:700px; height:500px;">
 </div>
 <div class="medium-5 large-3 columns">
@@ -168,7 +168,7 @@
         var autocomplete = new google.maps.places.Autocomplete(via_input);
         document.getElementById('map').style.display="block";  
         map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 10,
+          zoom: 4,
             center: {lat: 12.995332, lng: 77.591059},
         });
 
@@ -183,7 +183,6 @@
           computeTotalDistance(directionsDisplay.getDirections());
         });
         
-        new google.maps.event.trigger(map, 'resize'); 
           
       }
             
@@ -258,15 +257,6 @@
          
       }
 
-      function getParameterByName(name, url) {
-        if (!url) url = window.location.href;
-        name = name.replace(/[\[\]]/g, "\\$&");
-        var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
-            results = regex.exec(url);
-        if (!results) return null;
-        if (!results[2]) return '';
-        return decodeURIComponent(results[2].replace(/\+/g, " "));
-       }
 
       function computeTotalDistance(result) {
         var total = 0;

@@ -1,0 +1,289 @@
+
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Optimal Route Finder</title>
+<link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel='stylesheet' type='text/css'>    <style>
+      #right-panel {
+        font-family: 'Roboto','sans-serif';
+        line-height: 30px;
+        padding-left: 10px;
+      }
+
+      #right-panel select, #right-panel input {
+        font-size: 15px;
+      }
+
+      #right-panel select {
+        width: 100%;
+      }
+
+      #right-panel i {
+        font-size: 12px;
+      }
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        height: 100%;
+        float: left;
+        width: 63%;
+        height: 100%;
+          display:none;
+      }
+      #right-panel {
+        float: right;
+        width: 34%;
+        height: 100%;
+      }
+      .panel {
+        height: 100%;
+        overflow: auto;
+      }
+    </style>
+ 
+</head>
+<body>
+  
+ 
+<div class="title-bar" data-responsive-toggle="realEstateMenu" data-hide-for="small">
+<button class="menu-icon" type="button" data-toggle></button>
+<div class="title-bar-title">Menu</div>
+</div>
+<div class="top-bar" id="realEstateMenu">
+<div class="top-bar-left">
+<ul class="menu" data-responsive-menu="accordion">
+<li class="menu-text">Optimal route finder using Google Map Api</li>
+</ul>
+</div>
+<div class="top-bar-right">
+<ul class="menu">
+</ul>
+</div>
+</div>
+ 
+<br>
+<div class="row">
+<div class="medium-7 large-9 columns" id="map" style="width:700px; height:500px;">
+</div>
+<div class="medium-5 large-3 columns">
+<div class="callout secondary">
+<form>
+<div class="row">
+<div class="small-12 columns">
+<label>Source
+<input type="text" id="source" placeholder="Search Source">
+</label>
+</div>
+<div class="small-12 columns">
+<label>Destination
+<input type="text" id= "destination" placeholder="Search destination">
+</label>
+</div>
+    <div class="small-12 columns">
+        <label>Waypoints</label>
+      <div class="row collapse">
+        <div class="small-10 columns">
+          <input id="via" type="text" placeholder="Via places">
+        </div>
+        <div class="small-2 columns">
+          <a href="#" id="add_via_places" class="button postfix">Add</a>
+        </div>
+      </div>
+    </div>
+    
+<div class="small-12 columns">
+<button type="submit" id='get_route_button' class="button">Get Route!</button>
+</div>
+    
+<div class="small-12 columns">
+    <label>Via places </label>
+    <div id="via_places_div">
+    </div>
+</div>
+    
+</div>
+</form>
+</div>
+</div>
+</div>
+<div class="row column">
+<hr>
+</div>
+    
+<div id="directions_view" class="row column">
+    <p>Total Distance: <span id="total"></span></p>
+</div>
+    
+
+<!--<footer>
+<div class="row expanded callout secondary">
+<div class="small-6 large-3 columns">
+<p class="lead">Offices</p>
+<ul class="menu vertical">
+<li><a href="#">One</a></li>
+</ul>
+</div>
+<div class="small-6 large-3 columns">
+<p class="lead">Solar Systems</p>
+
+</div>
+<div class="small-6 large-3 columns">
+<p class="lead">Contact</p>
+<ul class="menu vertical">
+</ul>
+</div>
+<div class="small-6 large-3 columns">
+<p class="lead">Offices</p>
+<ul class="menu vertical">
+<li><a href="#">One</a></li>
+</ul>
+</div>
+</div>
+</footer> -->
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+        <script>
+      // This example requires the Places library. Include the libraries=places
+      // parameter when you first load the API. For example:
+      // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
+            
+    var source = []
+    var destination = []
+    var via_places = []
+    var map
+    var directionsService
+    var directionsDisplay
+      function initAutoComplete() {
+          var source_input = document.getElementById('source');
+        var autocomplete = new google.maps.places.Autocomplete(source_input);
+                    var dest_input = document.getElementById('destination');
+        var autocomplete = new google.maps.places.Autocomplete(dest_input);
+                    var via_input = document.getElementById('via');
+        var autocomplete = new google.maps.places.Autocomplete(via_input);
+        document.getElementById('map').style.display="block";  
+        map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 10,
+            center: {lat: 12.995332, lng: 77.591059},
+        });
+
+        directionsService = new google.maps.DirectionsService;
+        directionsDisplay = new google.maps.DirectionsRenderer({
+          draggable: true,
+          map: map,
+          panel: document.getElementById('directions_view')
+        });
+
+        directionsDisplay.addListener('directions_changed', function() {
+          computeTotalDistance(directionsDisplay.getDirections());
+        });
+        
+        new google.maps.event.trigger(map, 'resize'); 
+          
+      }
+            
+            $("#get_route_button").click(function(){
+            
+               src = $("#source").val()
+               dest = $("#destination").val()
+                if (src == "" || dest == ""){
+                    return 0
+                }
+                console.log(src)
+                console.log(dest)
+                console.log(via_places)
+                source.push(src);
+                destination.push(dest);
+                initMap();
+                
+                
+                
+                
+                
+            });
+            
+            
+    
+            $( "#add_via_places" ).click(function() {
+                via_places.push($('#via').val());
+                $( "#via_places_div" ).append( "<p>"+$('#via').val()+"</p>" );
+            });
+            
+        // initialize map with routes     
+        function initMap() {
+//        var map = new google.maps.Map(document.getElementById('map'), {
+//          zoom: 4
+//        });
+//
+//        var directionsService = new google.maps.DirectionsService;
+//        var directionsDisplay = new google.maps.DirectionsRenderer({
+//          draggable: true,
+//          map: map,
+//          panel: document.getElementById('directions_view')
+//        });
+//
+//        directionsDisplay.addListener('directions_changed', function() {
+//          computeTotalDistance(directionsDisplay.getDirections());
+//        });
+
+          origin = source[0]
+          dest = destination[0]
+          waypoints_list = via_places
+          waypoints_1 = []
+          for (var i =0; i < waypoints_list.length; i++){
+            waypoints_1.push({location:waypoints_list[i]})
+          }
+        displayRoute(origin, dest , directionsService, directionsDisplay, waypoints_1);
+      }
+
+      function displayRoute(origin, destination, service, display, waypoints_1) {
+        service.route({
+          origin: origin,
+          destination: destination,
+          waypoints: waypoints_1,
+          travelMode: 'DRIVING',
+          avoidTolls: true
+        }, function(response, status) {
+          if (status === 'OK') {
+            display.setDirections(response);
+          } else {
+            alert('Could not display directions due to: ' + status);
+          }
+        });
+         
+      }
+
+      function getParameterByName(name, url) {
+        if (!url) url = window.location.href;
+        name = name.replace(/[\[\]]/g, "\\$&");
+        var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+            results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, " "));
+       }
+
+      function computeTotalDistance(result) {
+        var total = 0;
+        var myroute = result.routes[0];
+        for (var i = 0; i < myroute.legs.length; i++) {
+          total += myroute.legs[i].distance.value;
+        }
+        total = total / 1000;
+        document.getElementById('total').innerHTML = total + ' km';
+      }
+            
+    </script>   
+        <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDbbTOPbDCGW5KsfY41SNItMTimdC_HeTY&libraries=places&callback=initAutoComplete">
+    </script>
+<script>
+      $(document).foundation();
+    </script>
+</body>
+</html>

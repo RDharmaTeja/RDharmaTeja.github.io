@@ -111,6 +111,7 @@
 </div>
     
 <div class="small-12 columns">
+    <label><b>Total Dist:</b> <div id = "total_dist_div"></div></label>
     <label><b>Route:</b> </label>
     <div id="via_places_div">
     </div>
@@ -376,6 +377,7 @@
         }
         total = total / 1000;
         document.getElementById('total').innerHTML = total + ' km';
+        $("#total_dist_div").empty();$("#total_dist_div").append(total+" km ");   
       }
  
             

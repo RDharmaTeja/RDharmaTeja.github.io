@@ -96,13 +96,22 @@
         </div>
       </div>
     </div>
+
+<div class="small-12 columns">
+<label>Optimal Route?
+        <select id="optimal_route">
+          <option value="No">No</option>
+          <option value="Yes">Yes</option>
+        </select>
+      </label>
+</div>
     
 <div class="small-12 columns">
 <a href="#" id='get_route_button' class="button">Get Route!</a>
 </div>
     
 <div class="small-12 columns">
-    <label>Via places </label>
+    <label><b>Route:</b> </label>
     <div id="via_places_div">
     </div>
 </div>
@@ -196,22 +205,123 @@
                 console.log(src)
                 console.log(dest)
                 console.log(via_places)
+                source = []
+                destination = []
                 source.push(src);
+                
                 destination.push(dest);
+                if ($("#optimal_route").val() == "Yes"){
+                get_optimal_route();
+                }
+                else{
                 initMap();
-                
-                
-                
-                
-                
+                }
             });
             
+            
+            function get_optimal_route(){
+                
+                    origins = []; origins.push(source[0]);
+                    Array.prototype.push.apply(origins, via_places)
+                    origins.push(destination[0])
+                    
+                all_destinations = origins
+                console.log(all_destinations)
+                var service = new google.maps.DistanceMatrixService();
+                service.getDistanceMatrix(
+                  {
+                    origins: origins,
+                    destinations: all_destinations,
+                    travelMode: 'DRIVING',
+                    unitSystem: google.maps.UnitSystem.METRIC,
+                    avoidHighways: false,
+                    avoidTolls: false,
+                  }, compute_optimal_route);                
+                
+            }
+            
+            function compute_optimal_route(response, status){
+                if (status !== 'OK') {
+                    alert('Error was: ' + status);
+                    }
+                else{
+              console.log(response)  
+                    var rows = response.rows;
+                    var via_indices = [];
+                    for(var i=0; i< via_places.length; i++ ){
+                        via_indices.push(i+1);
+                    }
+//                    console.log(via_indices)
+                    
+                    var via_indices_perm = permutator(via_indices)
+                    console.log(via_indices_perm)
+                    var min_dis = 100000000
+                    var opt_route = []
+                    for (var i =0; i < via_indices_perm.length; i++){
+                        var index_list = via_indices_perm[i];
+                        route = []
+                        route.push(0)
+                        Array.prototype.push.apply(route, index_list)
+                        route.push(source.length + index_list.length)
+                        res = get_distance(route, rows)
+                        console.log(res)
+                        if (res[0] < min_dis){
+                            min_dis = res[0];
+                            opt_route = route;
+                            }
+                        }
+                    
+                    opt_route_places = [];
+                    console.log(opt_route, min_dis)
+                    for (var i =0; i < via_places.length; i++){
+                        opt_route_places.push(via_places[opt_route[i+1]-1])
+                    }
+                    via_places = opt_route_places;
+                    console.log(via_places)
+                    initMap()
+                
+                }
+            }
+            
+            
+            function get_distance(route, rows){
+                var dist_list = [];
+                var time_list = [];
+//                console.log(rows)
+                console.log(route)
+                for (var i=0; i< route.length -1; i++ ){
+                    var source_index = route[i]
+                    var dest_index = route[i+1]
+//                    console.log(source_index, dest_index)
+                    var distance = rows[source_index].elements[dest_index].distance.value 
+                    var duration = rows[source_index].elements[dest_index].duration.value 
+                    dist_list.push(distance)
+                    time_list.push(duration)
+                }
+                console.log(dist_list)
+                console.log(time_list)
+                dist_total = 0; for(var i in dist_list) { dist_total += dist_list[i]; }
+                time_total = 0; for(var i in time_list) { time_total += time_list[i]; }
+                return [dist_total, time_total, dist_list, time_list]
+                
+            }
             
     
             $( "#add_via_places" ).click(function() {
                 via_places.push($('#via').val());
-                $( "#via_places_div" ).append( "<p>"+$('#via').val()+"</p>" );
+                set_via_places()
+                $('#via').val("")
             });
+        
+        function set_via_places(){
+            $( "#via_places_div" ).empty()
+            for(var i =0; i < via_places.length; i++){
+             $( "#via_places_div" ).append( "<p>"+(i+1)+". "+ via_places[i]+"</p>" );   
+            }
+            
+        }
+        
+        
             
         // initialize map with routes     
         function initMap() {
@@ -229,7 +339,7 @@
 //        directionsDisplay.addListener('directions_changed', function() {
 //          computeTotalDistance(directionsDisplay.getDirections());
 //        });
-
+            set_via_places()
           origin = source[0]
           dest = destination[0]
           waypoints_list = via_places
@@ -267,6 +377,28 @@
         total = total / 1000;
         document.getElementById('total').innerHTML = total + ' km';
       }
+ 
+            
+            function permutator(inputArr) {
+  var results = [];
+
+  function permute(arr, memo) {
+    var cur, memo = memo || [];
+
+    for (var i = 0; i < arr.length; i++) {
+      cur = arr.splice(i, 1);
+      if (arr.length === 0) {
+        results.push(memo.concat(cur));
+      }
+      permute(arr.slice(), memo.concat(cur));
+      arr.splice(i, 0, cur[0]);
+    }
+
+    return results;
+  }
+
+  return permute(inputArr);
+}
             
     </script>   
         <script async defer

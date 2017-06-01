@@ -69,15 +69,15 @@
  
 <br>
 <div class="row">    
-<div class="medium-7 large-9 columns" id="map" style="width:700px; height:500px;">
+<div class="medium-7 large-9 columns" id="map" style="width:700px; height:500px;" name="map_canvas">
 </div>
 <div class="medium-5 large-3 columns">
 <div class="callout secondary">
-<form>
+<form name="input_form">
 <div class="row">
 <div class="small-12 columns">
 <label>Source
-<input type="text" id="source" placeholder="Search Source">
+<input type="text" id="source" placeholder="Search Source" >
 </label>
 </div>
 <div class="small-12 columns">
@@ -92,7 +92,7 @@
           <input id="via" type="text" placeholder="Via places">
         </div>
         <div class="small-2 columns">
-          <a href="#" id="add_via_places" class="button postfix">Add</a>
+          <a href="#input_form" id="add_via_places" class="button postfix">Add</a>
         </div>
       </div>
     </div>
@@ -107,7 +107,7 @@
 </div>
     
 <div class="small-12 columns">
-<a href="#" id='get_route_button' class="button">Get Route!</a>
+<a href="#map_canvas" id='get_route_button' class="button">Get Route!</a>
 </div>
     
 <div class="small-12 columns">

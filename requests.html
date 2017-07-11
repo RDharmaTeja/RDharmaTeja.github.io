@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container-fluid">
+
+<!-- Header starts -->
+  <h3>Request id: {{}} </h3>
+  <p>Following are the details extracted so far</p>
+<!-- Header ends -->
+
+
+
+<!-- Run status banner-->
+  <div class="alert alert-success">
+  <strong>Success!</strong> Run is successful without any errors
+</div>
+  <div class="alert alert-info">
+  <strong>Info!</strong> Run is currently in progress without any errors
+</div>
+
+<div class="alert alert-warning">
+  <strong>Warning!</strong> Run currently in progress with errors
+</div>
+
+<div class="alert alert-warning">
+  <strong>Warning!</strong> Run successful with errors
+</div>
+
+<div class="alert alert-danger">
+  <strong>Danger!</strong> Run failed
+</div>
+<!-- Run status banner ends-->
+
+
+<!--Main table -->
+  <table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Field</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    <tr>
+      <td>Log path</td>
+      <td>{{}}</td>
+    </tr>
+
+    <tr>
+      <td>Workflow</td>
+      <td>{{}} started on {{}}</td>
+    </tr>
+
+    <tr>
+      <td>Progress</td>
+
+      <td>
+            <div class="progress">
+      <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40"
+        aria-valuemin="0" aria-valuemax="100" style="width:40%">
+        40% Complete (success)
+      </div>
+      </div>
+
+        {{}}
+
+      </td>
+    </tr>
+
+    <tr>
+      <td>Task string</td>
+      <td>
+      <button type="button" class="btn btn-info" data-toggle="modal" data-target="#tsModal">Open TS</button>
+      </td>
+    </tr>
+
+    <tr>
+      <td>Overrides</td>
+      <td>
+      <button type="button" class="btn btn-info" data-toggle="modal" data-target="#overrideModal">Open overrides</button>
+      </td>
+    </tr>
+
+    <tr>
+      <td>Duration</td>
+      <td>{{}}</td>
+    </tr>
+
+    <tr>
+      <td>Codebase Location</td>
+      <td>{{}}</td>
+    </tr>
+
+    <tr>
+      <td>Code revisions</td>
+      <td>
+        <p> BPL Revision{{}}</p>
+        <p>  QLib Revision {{}} </p>
+        <p>  Ext64 Revision {{}} </p>
+
+      </td>
+    </tr>
+
+
+  </tbody>
+</table>
+
+    <!-- Task string Modal -->
+  <div class="modal fade" id="tsModal" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Task string Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <p>Some text in the modal.</p>
+          <p>Some text in the modal.</p>
+          <p>Some text in the modal.</p><p>Some text in the modal.</p><p>Some text in the modal.</p><p>Some text in the modal.</p><p>Some text in the modal.</p><p>Some text in the modal.</p><p>Some text in the modal.</p><p>Some text in the modal.</p><p>Some text in the modal.</p><p>Some text in the modal.</p><p>Some text in the modal.</p><p>Some text in the modal.</p><p>Some text in the modal.</p><p>Some text in the modal.</p><p>Some text in the modal.</p><p>Some text in the modal.</p><p>Some text in the modal.</p><p>Some text in the modal.</p><p>Some text in the modal.</p><p>Some text in the modal.</p><p>Some text in the modal.</p><p>Some text in the modal.</p><p>Some text in the modal.</p><p>Some text in the modal.</p><p>Some text in the modal.</p><p>Some text in the modal.</p><p>Some text in the modal.</p><p>Some text in the modal.</p><p>Some text in the modal.</p><p>Some text in the modal.</p><p>Some text in the modal.</p><p>Some text in the modal.</p><p>Some text in the modal.</p><p>Some text in the modal.</p><p>Some text in the modal.</p><p>Some text in the modal.</p><p>Some text in the modal.</p><p>Some text in the modal.</p><p>Some text in the modal.</p><p>Some text in the modal.</p><p>Some text in the modal.</p><p>Some text in the modal.</p><p>Some text in the modal.</p><p>Some text in the modal.</p><p>Some text in the modal.</p><p>Some text in the modal.</p><p>Some text in the modal.</p><p>Some text in the modal.</p><p>Some text in the modal.</p><p>Some text in the modal.</p><p>Some text in the modal.</p><p>Some text in the modal.</p><p>Some text in the modal.</p><p>Some text in the modal.</p>
+
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+      <!-- Overrides Modal -->
+  <div class="modal fade" id="overrideModal" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- overrides Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <p>Some text in the modal.</p>
+          <p>Some text in the modal.</p>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+<!--Main table ends-->
+
+
+</div>
+
+</body>
+</html>

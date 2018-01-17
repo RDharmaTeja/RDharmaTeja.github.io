@@ -1,0 +1,2619 @@
+palace restaurant
+-->hamburger
+---->hamburger
+--------->meal additions
+-------------->coleslaw
+-------------->house salad
+------------------->choice of salad dressing
+------------------------>honey mustard dressing
+------------------------>italian dressing
+------------------------>olive oil and vinegar dressing
+------------------------>blue cheese dressing
+------------------------>russian dressing
+------------------------>balsamic vinaigrette dressing
+------------------------>diet ranch dressing
+------------------------>caesar dressing
+------------------------>french dressing
+-------------->potato salad
+-------------->homemade golden brown onion rings
+-------------->snapple
+------------------->choice of snapple
+------------------------>orange
+------------------------>diet peach
+------------------------>raspberry
+------------------------>diet raspberry
+------------------------>diet green tea
+------------------------>diet lemon
+------------------------>fruit punch
+------------------------>kiwi-strawberry
+------------------------>lemon
+------------------------>mango
+------------------------>peach
+-------------->french fries
+-------------->soda
+------------------->choice of canned soda
+------------------------>ginger ale
+------------------------>diet ginger ale
+------------------------>coke
+------------------------>7 up
+------------------------>diet coke
+------------------------>diet 7 up
+------------------------>pepsi
+------------------------>diet pepsi
+------------------------>sprite
+------------------------>sprite zero
+-------------->baked potato
+--------->pick one
+-------------->deluxe
+-------------->regular
+--------->choice of meat preparation
+-------------->medium rare
+-------------->well done
+-------------->medium
+-------------->medium well
+--------->burger extras
+-------------->cheese
+------------------->choice of cheese
+------------------------>cheddar cheese
+------------------------>swiss cheese
+------------------------>american cheese
+-------------->bacon
+-------------->sauteed mushrooms
+-------------->lettuce
+-------------->fried onions
+-------------->tomato
+-------------->avocado
+
+
+sherwood to go
+-->hamburger
+---->hamburger
+--------->choice of burger
+-------------->1/2 ibs. beef burger
+------------------->meat preparation
+------------------------>well done
+------------------------>medium
+------------------------>medium well
+------------------------>medium rare
+-------------->1/2 lbs. turkey burger
+-------------->turkey burger
+-------------->beef burger
+------------------->meat preparation
+------------------------>well done
+------------------------>medium
+------------------------>medium well
+------------------------>medium rare
+--------->burger extra toppings
+-------------->fresh mozzarella cheese
+-------------->premium cheese
+------------------->add premium cheese
+------------------------>havarti cheese
+------------------------>monetery jack cheese
+------------------------>cheddar cheese
+------------------------>swiss cheese
+------------------------>muenster cheese
+------------------------>jarlsberg swiss cheese
+------------------------>mozzarella cheese
+------------------------>alpine lace swiss cheese
+------------------------>jalapeno jack cheese
+------------------------>provolone cheese
+------------------------>asiago cheese
+-------------->lettuce,tomato & grilled onions
+-------------->bacon
+-------------->avocado
+-------------->red onion
+-------------->mayo
+-------------->black olives
+-------------->lettuce. tomato & onion
+-------------->honey mustard
+-------------->sliced jalapeno peppers
+-------------->roasted peppers
+-------------->russian dressing
+-------------->american cheese
+
+
+corner grocers
+-->hamburger
+---->hamburger
+--------->choice of meat preparation
+-------------->well done
+-------------->rare
+-------------->medium
+-------------->medium well
+-------------->medium rare
+--------->optional condiments
+-------------->black pepper
+-------------->mayonnaise
+-------------->mustard
+-------------->ketchup
+-------------->lettuce
+-------------->salt
+
+
+panini grill
+-->Types of hamburger
+---->beef burger
+--------->pick one
+-------------->single (6 oz)
+-------------->double (12 oz)
+--------->sandwich/burger add ons
+-------------->american cheese
+-------------->swiss cheese
+-------------->cheddar cheese
+-------------->bacon
+-------------->avocado
+-------------->jalapenos
+-------------->tomatoes
+--------->optional sandwich/burger preparation
+-------------->deluxe with onion rings
+-------------->deluxe with french fries
+--------->meat preparation
+-------------->rare
+-------------->medium well
+-------------->medium
+-------------->well done
+-------------->medium rare
+--------->choice of condiments
+-------------->ketchup
+-------------->mayo
+-------------->mustard
+---->turkey burger
+--------->optional sandwich/burger preparation
+-------------->deluxe with onion rings
+-------------->deluxe with french fries
+--------->choice of condiments
+-------------->mustard
+-------------->ketchup
+-------------->mayo
+--------->sandwich/burger add ons
+-------------->tomatoes
+-------------->american cheese
+-------------->swiss cheese
+-------------->cheddar cheese
+-------------->bacon
+-------------->avocado
+-------------->jalapenos
+---->vegetable burger
+--------->sandwich/burger add ons
+-------------->cheddar cheese
+-------------->bacon
+-------------->avocado
+-------------->jalapenos
+-------------->tomatoes
+-------------->american cheese
+-------------->swiss cheese
+--------->optional sandwich/burger preparation
+-------------->deluxe with onion rings
+-------------->deluxe with french fries
+--------->choice of condiments
+-------------->mustard
+-------------->mayo
+-------------->ketchup
+
+
+cozy corner
+-->Types of hamburger
+---->beef burger
+--------->pick one
+-------------->deluxe
+-------------->sandwich
+---->western burger
+--------->pick one
+-------------->sandwich
+-------------->deluxe
+---->turkey burger
+---->cheese burger
+--------->pick one
+-------------->deluxe
+-------------->sandwich
+---->pizza burger
+--------->pick one
+-------------->deluxe
+-------------->sandwich
+---->blue burger
+--------->pick one
+-------------->sandwich
+-------------->deluxe
+---->texan burger
+--------->pick one
+-------------->sandwich
+-------------->deluxe
+
+
+america's burgers & wraps
+-->Types of hamburger
+---->beef burger
+--------->burger extras
+-------------->american cheese
+-------------->swiss cheese
+-------------->cheddar cheese
+-------------->tomato
+--------->choice of meat preparation
+-------------->medium
+-------------->medium well
+-------------->medium rare
+-------------->well done
+--------->pick one
+-------------->deluxe
+-------------->regular
+--------->meal additions
+-------------->house salad
+------------------->choice of salad dressing 
+------------------------>honey dijon
+------------------------>japanese ginger
+------------------------>champaigne
+------------------------>plum asian vinaigrette
+------------------------>classic italian dressing 
+------------------------>frecnh
+------------------------>fat free creamy italian 
+------------------------>ranch
+------------------------>rockford
+------------------------>fat free raspberry 
+------------------------>russian 
+------------------------>virgin olive oil in balsamic vinegar
+-------------->caesar salad
+-------------->canned soda
+------------------->choice of canned soda
+------------------------>ginger ale
+------------------------>diet coke
+------------------------>coke
+------------------------>sprite
+-------------->idaho french fries
+-------------->idaho french fries with cheese
+-------------->onion rings
+-------------->greek fries
+---->portobello mushroom burger
+--------->burger extras
+-------------->swiss cheese
+-------------->american cheese
+-------------->cheddar cheese
+-------------->tomato
+--------->pick one
+-------------->regular
+-------------->deluxe
+--------->meal additions
+-------------->house salad
+------------------->choice of salad dressing 
+------------------------>honey dijon
+------------------------>japanese ginger
+------------------------>champaigne
+------------------------>plum asian vinaigrette
+------------------------>classic italian dressing 
+------------------------>fat free creamy italian 
+------------------------>ranch
+------------------------>frecnh
+------------------------>rockford
+------------------------>fat free raspberry 
+------------------------>russian 
+------------------------>virgin olive oil in balsamic vinegar
+-------------->caesar salad
+-------------->canned soda
+------------------->choice of canned soda
+------------------------>coke
+------------------------>sprite
+------------------------>diet coke
+------------------------>ginger ale
+-------------->idaho french fries
+-------------->idaho french fries with cheese
+-------------->onion rings
+-------------->greek fries
+---->turkey burger
+--------->meal additions
+-------------->idaho french fries
+-------------->idaho french fries with cheese
+-------------->onion rings
+-------------->greek fries
+-------------->house salad
+------------------->choice of salad dressing 
+------------------------>plum asian vinaigrette
+------------------------>classic italian dressing 
+------------------------>fat free creamy italian 
+------------------------>ranch
+------------------------>rockford
+------------------------>frecnh
+------------------------>russian 
+------------------------>virgin olive oil in balsamic vinegar
+------------------------>honey dijon
+------------------------>fat free raspberry 
+------------------------>japanese ginger
+------------------------>champaigne
+-------------->caesar salad
+-------------->canned soda
+------------------->choice of canned soda
+------------------------>sprite
+------------------------>diet coke
+------------------------>ginger ale
+------------------------>coke
+--------->burger extras
+-------------->cheddar cheese
+-------------->tomato
+-------------->american cheese
+-------------->swiss cheese
+--------->pick one
+-------------->regular
+-------------->deluxe
+---->bacon burger
+--------->burger extras
+-------------->american cheese
+-------------->tomato
+-------------->swiss cheese
+-------------->cheddar cheese
+--------->choice of meat preparation
+-------------->medium
+-------------->well done
+-------------->medium rare
+-------------->medium well
+--------->pick one
+-------------->deluxe
+-------------->regular
+--------->meal additions
+-------------->onion rings
+-------------->greek fries
+-------------->house salad
+------------------->choice of salad dressing 
+------------------------>rockford
+------------------------>fat free raspberry 
+------------------------>russian 
+------------------------>virgin olive oil in balsamic vinegar
+------------------------>honey dijon
+------------------------>fat free creamy italian 
+------------------------>japanese ginger
+------------------------>champaigne
+------------------------>plum asian vinaigrette
+------------------------>classic italian dressing 
+------------------------>frecnh
+------------------------>ranch
+-------------->caesar salad
+-------------->canned soda
+------------------->choice of canned soda
+------------------------>diet coke
+------------------------>coke
+------------------------>ginger ale
+------------------------>sprite
+-------------->idaho french fries
+-------------->idaho french fries with cheese
+---->bbq burger
+--------->meal additions
+-------------->greek fries
+-------------->house salad
+------------------->choice of salad dressing 
+------------------------>virgin olive oil in balsamic vinegar
+------------------------>honey dijon
+------------------------>japanese ginger
+------------------------>champaigne
+------------------------>plum asian vinaigrette
+------------------------>classic italian dressing 
+------------------------>frecnh
+------------------------>fat free creamy italian 
+------------------------>ranch
+------------------------>rockford
+------------------------>fat free raspberry 
+------------------------>russian 
+-------------->caesar salad
+-------------->canned soda
+------------------->choice of canned soda
+------------------------>sprite
+------------------------>diet coke
+------------------------>coke
+------------------------>ginger ale
+-------------->idaho french fries
+-------------->idaho french fries with cheese
+-------------->onion rings
+--------->burger extras
+-------------->american cheese
+-------------->tomato
+-------------->cheddar cheese
+-------------->swiss cheese
+--------->choice of meat preparation
+-------------->medium
+-------------->well done
+-------------->medium rare
+-------------->medium well
+--------->pick one
+-------------->regular
+-------------->deluxe
+
+
+space 62 market
+-->Types of hamburger
+----> hamburger
+--------->protein add-ons
+-------------->bacon
+-------------->beef sausage links
+-------------->bologna
+-------------->ham
+-------------->turkey bacon
+-------------->pepperoni
+-------------->turkey sausage links
+-------------->salami
+-------------->pastrami
+-------------->turkey
+-------------->roast beef
+-------------->1 extra egg
+-------------->honey turkey
+-------------->sausage
+--------->choice of condiments
+-------------->mayonnaise
+-------------->mustard
+-------------->ketchup
+-------------->salt
+-------------->chipotle mayonnaise
+-------------->honey mustard
+-------------->hot sauce
+-------------->black pepper
+--------->cheese add-ons
+-------------->swiss cheese
+-------------->cheddar cheese
+-------------->feta cheese
+-------------->brie cheese
+-------------->mozzarella cheese
+-------------->muenster cheese
+-------------->pepper jack cheese
+-------------->provolone cheese
+-------------->american cheese
+--------->veggies add-ons
+-------------->cucumbers
+-------------->red peppers
+-------------->green peppers
+-------------->avocado
+-------------->roasted red peppers
+-------------->jalapenos
+-------------->spinach
+-------------->lettuce
+-------------->black olives
+-------------->sun-dried tomatoes
+-------------->mushrooms
+-------------->broccoli
+-------------->tomato
+-------------->onions
+-------------->cherry peppers
+-------------->pickles
+-------------->banana peppers
+-------------->coleslaw
+-------------->red onions
+--------->make it a deluxe
+-------------->deluxe with french fries
+-------------->deluxe with garlic fries
+-------------->deluxe with onion rings
+----> sm special burger
+--------->cheese add-ons
+-------------->cheddar cheese
+-------------->feta cheese
+-------------->mozzarella cheese
+-------------->brie cheese
+-------------->muenster cheese
+-------------->pepper jack cheese
+-------------->provolone cheese
+-------------->american cheese
+-------------->swiss cheese
+--------->veggies add-ons
+-------------->green peppers
+-------------->avocado
+-------------->roasted red peppers
+-------------->banana peppers
+-------------->jalapenos
+-------------->spinach
+-------------->lettuce
+-------------->sun-dried tomatoes
+-------------->mushrooms
+-------------->broccoli
+-------------->tomato
+-------------->onions
+-------------->black olives
+-------------->cherry peppers
+-------------->pickles
+-------------->coleslaw
+-------------->red onions
+-------------->cucumbers
+-------------->red peppers
+--------->make it a deluxe
+-------------->deluxe with garlic fries
+-------------->deluxe with onion rings
+-------------->deluxe with french fries
+--------->choice of condiments
+-------------->mustard
+-------------->salt
+-------------->ketchup
+-------------->chipotle mayonnaise
+-------------->honey mustard
+-------------->hot sauce
+-------------->black pepper
+-------------->mayonnaise
+--------->protein add-ons
+-------------->bologna
+-------------->sausage
+-------------->ham
+-------------->turkey bacon
+-------------->pepperoni
+-------------->turkey sausage links
+-------------->salami
+-------------->pastrami
+-------------->roast beef
+-------------->1 extra egg
+-------------->honey turkey
+-------------->turkey
+-------------->bacon
+-------------->beef sausage links
+----> blue burger
+--------->choice of condiments
+-------------->honey mustard
+-------------->hot sauce
+-------------->black pepper
+-------------->mayonnaise
+-------------->mustard
+-------------->ketchup
+-------------->salt
+-------------->chipotle mayonnaise
+--------->cheese add-ons
+-------------->muenster cheese
+-------------->pepper jack cheese
+-------------->provolone cheese
+-------------->american cheese
+-------------->swiss cheese
+-------------->brie cheese
+-------------->cheddar cheese
+-------------->feta cheese
+-------------->mozzarella cheese
+--------->veggies add-ons
+-------------->sun-dried tomatoes
+-------------->mushrooms
+-------------->broccoli
+-------------->tomato
+-------------->onions
+-------------->cherry peppers
+-------------->pickles
+-------------->coleslaw
+-------------->red onions
+-------------->black olives
+-------------->cucumbers
+-------------->red peppers
+-------------->green peppers
+-------------->avocado
+-------------->roasted red peppers
+-------------->jalapenos
+-------------->banana peppers
+-------------->spinach
+-------------->lettuce
+--------->make it a deluxe
+-------------->deluxe with garlic fries
+-------------->deluxe with onion rings
+-------------->deluxe with french fries
+--------->protein add-ons
+-------------->salami
+-------------->pastrami
+-------------->roast beef
+-------------->sausage
+-------------->1 extra egg
+-------------->honey turkey
+-------------->bacon
+-------------->turkey
+-------------->beef sausage links
+-------------->bologna
+-------------->ham
+-------------->turkey bacon
+-------------->pepperoni
+-------------->turkey sausage links
+----> bbq burger
+--------->cheese add-ons
+-------------->mozzarella cheese
+-------------->muenster cheese
+-------------->brie cheese
+-------------->pepper jack cheese
+-------------->provolone cheese
+-------------->american cheese
+-------------->swiss cheese
+-------------->cheddar cheese
+-------------->feta cheese
+--------->veggies add-ons
+-------------->jalapenos
+-------------->banana peppers
+-------------->spinach
+-------------->lettuce
+-------------->sun-dried tomatoes
+-------------->mushrooms
+-------------->broccoli
+-------------->tomato
+-------------->onions
+-------------->cherry peppers
+-------------->pickles
+-------------->coleslaw
+-------------->red onions
+-------------->cucumbers
+-------------->red peppers
+-------------->black olives
+-------------->green peppers
+-------------->avocado
+-------------->roasted red peppers
+--------->make it a deluxe
+-------------->deluxe with garlic fries
+-------------->deluxe with onion rings
+-------------->deluxe with french fries
+--------->protein add-ons
+-------------->pepperoni
+-------------->turkey sausage links
+-------------->salami
+-------------->pastrami
+-------------->roast beef
+-------------->1 extra egg
+-------------->honey turkey
+-------------->turkey
+-------------->bacon
+-------------->beef sausage links
+-------------->bologna
+-------------->sausage
+-------------->ham
+-------------->turkey bacon
+--------->choice of condiments
+-------------->ketchup
+-------------->salt
+-------------->chipotle mayonnaise
+-------------->honey mustard
+-------------->hot sauce
+-------------->black pepper
+-------------->mayonnaise
+-------------->mustard
+----> coleslaw burger
+--------->cheese add-ons
+-------------->pepper jack cheese
+-------------->provolone cheese
+-------------->american cheese
+-------------->swiss cheese
+-------------->brie cheese
+-------------->cheddar cheese
+-------------->feta cheese
+-------------->mozzarella cheese
+-------------->muenster cheese
+--------->veggies add-ons
+-------------->broccoli
+-------------->tomato
+-------------->onions
+-------------->cherry peppers
+-------------->banana peppers
+-------------->pickles
+-------------->coleslaw
+-------------->red onions
+-------------->cucumbers
+-------------->red peppers
+-------------->black olives
+-------------->green peppers
+-------------->avocado
+-------------->roasted red peppers
+-------------->jalapenos
+-------------->spinach
+-------------->lettuce
+-------------->sun-dried tomatoes
+-------------->mushrooms
+--------->make it a deluxe
+-------------->deluxe with garlic fries
+-------------->deluxe with onion rings
+-------------->deluxe with french fries
+--------->choice of condiments
+-------------->honey mustard
+-------------->salt
+-------------->hot sauce
+-------------->black pepper
+-------------->mayonnaise
+-------------->mustard
+-------------->ketchup
+-------------->chipotle mayonnaise
+--------->protein add-ons
+-------------->pastrami
+-------------->turkey
+-------------->roast beef
+-------------->1 extra egg
+-------------->honey turkey
+-------------->bacon
+-------------->sausage
+-------------->beef sausage links
+-------------->bologna
+-------------->ham
+-------------->turkey bacon
+-------------->pepperoni
+-------------->turkey sausage links
+-------------->salami
+----> chipotle burger
+--------->protein add-ons
+-------------->1 extra egg
+-------------->honey turkey
+-------------->bacon
+-------------->beef sausage links
+-------------->bologna
+-------------->ham
+-------------->turkey bacon
+-------------->pepperoni
+-------------->turkey sausage links
+-------------->turkey
+-------------->salami
+-------------->pastrami
+-------------->sausage
+-------------->roast beef
+--------->cheese add-ons
+-------------->provolone cheese
+-------------->american cheese
+-------------->swiss cheese
+-------------->cheddar cheese
+-------------->feta cheese
+-------------->mozzarella cheese
+-------------->brie cheese
+-------------->muenster cheese
+-------------->pepper jack cheese
+--------->veggies add-ons
+-------------->pickles
+-------------->banana peppers
+-------------->coleslaw
+-------------->red onions
+-------------->cucumbers
+-------------->red peppers
+-------------->green peppers
+-------------->avocado
+-------------->roasted red peppers
+-------------->jalapenos
+-------------->spinach
+-------------->lettuce
+-------------->sun-dried tomatoes
+-------------->mushrooms
+-------------->black olives
+-------------->broccoli
+-------------->tomato
+-------------->onions
+-------------->cherry peppers
+--------->make it a deluxe
+-------------->deluxe with garlic fries
+-------------->deluxe with onion rings
+-------------->deluxe with french fries
+--------->choice of condiments
+-------------->hot sauce
+-------------->salt
+-------------->black pepper
+-------------->mayonnaise
+-------------->mustard
+-------------->ketchup
+-------------->chipotle mayonnaise
+-------------->honey mustard
+
+
+midtown diner & restaurant
+-->Types of hamburger
+---->hamburger club triple decker
+--------->choice of meat preparation
+-------------->medium rare
+-------------->medium well
+-------------->medium
+-------------->well done
+--------->add cheese
+-------------->mozzarella cheese
+-------------->muenster cheese
+-------------->pepper jack cheese
+-------------->provolone cheese
+-------------->american cheese
+-------------->cheddar cheese
+--------->meal additions
+-------------->nachos
+-------------->french fried potato
+-------------->iced coffee
+------------------->choice of preparation
+------------------------>regular
+------------------------>decaf
+------------------->beverage preparation
+------------------------>half & half
+------------------------>skim milk
+------------------------>lemon
+------------------------>sugar
+------------------------>splenda
+------------------------>equal
+------------------------>whole milk
+-------------->snapple
+------------------->choice of snapple
+------------------------>fruit punch
+------------------------>kiwi strawberry
+------------------------>lemon tea
+------------------------>mango madness
+------------------------>diet lemon tea
+------------------------>orangeade
+------------------------>raspberry tea
+------------------------>peach tea
+------------------------>diet raspberry tea
+------------------------>diet peach tea
+-------------->can soda (12 oz.)
+------------------->choice of can soda
+------------------------>diet sprite
+------------------------>coke
+------------------------>diet coke
+-------------->bottled spring water
+-------------->grape leaves (5)
+-------------->mozzarella sticks (7)
+-------------->fresh fruit salad
+-------------->buffalo wings (8)
+--------->choice of fries
+-------------->french fries
+-------------->sweet potato fries
+-------------->curly fries
+---->tex mex burger
+--------->make it burger deluxe
+-------------->deluxe with sweet potato fries
+-------------->deluxe with curly fries
+-------------->deluxe with salad
+-------------->deluxe with baked potato
+-------------->deluxe with french fries
+--------->choice of burger bread
+-------------->poppy seed bagel
+-------------->sesame seed bagel
+-------------->burger bun
+-------------->whole wheat bagel
+-------------->english muffin
+-------------->everything bagel
+-------------->plain bagel
+--------->meal additions
+-------------->bottled spring water
+-------------->can soda (12 oz.)
+------------------->choice of can soda
+------------------------>diet sprite
+------------------------>coke
+------------------------>diet coke
+-------------->fresh fruit salad
+-------------->grape leaves (5)
+-------------->french fried potato
+-------------->mozzarella sticks (7)
+-------------->buffalo wings (8)
+-------------->nachos
+-------------->iced coffee
+------------------->beverage preparation
+------------------------>skim milk
+------------------------>lemon
+------------------------>sugar
+------------------------>splenda
+------------------------>equal
+------------------------>whole milk
+------------------------>half & half
+------------------->choice of preparation
+------------------------>regular
+------------------------>decaf
+-------------->snapple
+------------------->choice of snapple
+------------------------>kiwi strawberry
+------------------------>lemon tea
+------------------------>mango madness
+------------------------>diet lemon tea
+------------------------>orangeade
+------------------------>raspberry tea
+------------------------>peach tea
+------------------------>diet raspberry tea
+------------------------>diet peach tea
+------------------------>fruit punch
+--------->choice of burger extras
+-------------->fresh mushroom
+-------------->american cheese
+-------------->grilled onions
+-------------->cheddar cheese
+-------------->feta cheese
+-------------->ham
+-------------->mozzarella cheese
+-------------->tomato
+-------------->guacamole
+-------------->muenster cheese
+-------------->bacon
+-------------->pepper jack cheese
+-------------->sauteed onions
+-------------->swiss cheese
+-------------->havarti cheese
+---->55 burger
+--------->choice of meat preparation
+-------------->medium rare
+-------------->medium well
+-------------->medium
+-------------->well done
+--------->meal additions
+-------------->mozzarella sticks (7)
+-------------->iced coffee
+------------------->choice of preparation
+------------------------>decaf
+------------------------>regular
+------------------->beverage preparation
+------------------------>splenda
+------------------------>equal
+------------------------>whole milk
+------------------------>half & half
+------------------------>skim milk
+------------------------>lemon
+------------------------>sugar
+-------------->buffalo wings (8)
+-------------->nachos
+-------------->french fried potato
+-------------->fresh fruit salad
+-------------->snapple
+------------------->choice of snapple
+------------------------>orangeade
+------------------------>raspberry tea
+------------------------>peach tea
+------------------------>diet raspberry tea
+------------------------>diet peach tea
+------------------------>fruit punch
+------------------------>kiwi strawberry
+------------------------>lemon tea
+------------------------>mango madness
+------------------------>diet lemon tea
+-------------->can soda (12 oz.)
+------------------->choice of can soda
+------------------------>diet sprite
+------------------------>coke
+------------------------>diet coke
+-------------->bottled spring water
+-------------->grape leaves (5)
+--------->choice of burger extras
+-------------->feta cheese
+-------------->ham
+-------------->mozzarella cheese
+-------------->tomato
+-------------->guacamole
+-------------->muenster cheese
+-------------->bacon
+-------------->pepper jack cheese
+-------------->sauteed onions
+-------------->swiss cheese
+-------------->havarti cheese
+-------------->fresh mushroom
+-------------->american cheese
+-------------->grilled onions
+-------------->cheddar cheese
+--------->choice of burger bread
+-------------->burger bun
+-------------->whole wheat bagel
+-------------->english muffin
+-------------->everything bagel
+-------------->plain bagel
+-------------->poppy seed bagel
+-------------->sesame seed bagel
+--------->make it burger deluxe
+-------------->deluxe with curly fries
+-------------->deluxe with salad
+-------------->deluxe with baked potato
+-------------->deluxe with sweet potato fries
+-------------->deluxe with french fries
+---->lexington burger
+--------->choice of meat preparation
+-------------->medium well
+-------------->medium rare
+-------------->well done
+-------------->medium
+--------->meal additions
+-------------->iced coffee
+------------------->choice of preparation
+------------------------>decaf
+------------------------>regular
+------------------->beverage preparation
+------------------------>splenda
+------------------------>equal
+------------------------>whole milk
+------------------------>half & half
+------------------------>skim milk
+------------------------>lemon
+------------------------>sugar
+-------------->mozzarella sticks (7)
+-------------->buffalo wings (8)
+-------------->french fried potato
+-------------->nachos
+-------------->fresh fruit salad
+-------------->snapple
+------------------->choice of snapple
+------------------------>raspberry tea
+------------------------>peach tea
+------------------------>diet raspberry tea
+------------------------>diet peach tea
+------------------------>fruit punch
+------------------------>kiwi strawberry
+------------------------>lemon tea
+------------------------>mango madness
+------------------------>diet lemon tea
+------------------------>orangeade
+-------------->can soda (12 oz.)
+------------------->choice of can soda
+------------------------>diet coke
+------------------------>coke
+------------------------>diet sprite
+-------------->bottled spring water
+-------------->grape leaves (5)
+--------->choice of burger extras
+-------------->feta cheese
+-------------->ham
+-------------->mozzarella cheese
+-------------->tomato
+-------------->guacamole
+-------------->muenster cheese
+-------------->bacon
+-------------->pepper jack cheese
+-------------->sauteed onions
+-------------->swiss cheese
+-------------->havarti cheese
+-------------->fresh mushroom
+-------------->american cheese
+-------------->grilled onions
+-------------->cheddar cheese
+--------->make it burger deluxe
+-------------->deluxe with salad
+-------------->deluxe with baked potato
+-------------->deluxe with french fries
+-------------->deluxe with sweet potato fries
+-------------->deluxe with curly fries
+--------->choice of burger bread
+-------------->burger bun
+-------------->whole wheat bagel
+-------------->english muffin
+-------------->everything bagel
+-------------->plain bagel
+-------------->poppy seed bagel
+-------------->sesame seed bagel
+---->texas burger
+--------->choice of meat preparation
+-------------->well done
+-------------->medium
+-------------->medium well
+-------------->medium rare
+--------->make it burger deluxe
+-------------->deluxe with baked potato
+-------------->deluxe with curly fries
+-------------->deluxe with sweet potato fries
+-------------->deluxe with french fries
+-------------->deluxe with salad
+--------->choice of burger bread
+-------------->everything bagel
+-------------->plain bagel
+-------------->poppy seed bagel
+-------------->sesame seed bagel
+-------------->burger bun
+-------------->whole wheat bagel
+-------------->english muffin
+--------->meal additions
+-------------->nachos
+-------------->iced coffee
+------------------->choice of preparation
+------------------------>regular
+------------------------>decaf
+------------------->beverage preparation
+------------------------>half & half
+------------------------>skim milk
+------------------------>lemon
+------------------------>sugar
+------------------------>splenda
+------------------------>equal
+------------------------>whole milk
+-------------->french fried potato
+-------------->snapple
+------------------->choice of snapple
+------------------------>fruit punch
+------------------------>kiwi strawberry
+------------------------>lemon tea
+------------------------>mango madness
+------------------------>diet lemon tea
+------------------------>orangeade
+------------------------>raspberry tea
+------------------------>peach tea
+------------------------>diet raspberry tea
+------------------------>diet peach tea
+-------------->can soda (12 oz.)
+------------------->choice of can soda
+------------------------>diet coke
+------------------------>coke
+------------------------>diet sprite
+-------------->grape leaves (5)
+-------------->mozzarella sticks (7)
+-------------->bottled spring water
+-------------->buffalo wings (8)
+-------------->fresh fruit salad
+--------->choice of burger extras
+-------------->bacon
+-------------->pepper jack cheese
+-------------->sauteed onions
+-------------->swiss cheese
+-------------->havarti cheese
+-------------->fresh mushroom
+-------------->american cheese
+-------------->grilled onions
+-------------->cheddar cheese
+-------------->feta cheese
+-------------->ham
+-------------->mozzarella cheese
+-------------->tomato
+-------------->guacamole
+-------------->muenster cheese
+---->louisiana burger
+--------->choice of burger bread
+-------------->poppy seed bagel
+-------------->sesame seed bagel
+-------------->burger bun
+-------------->whole wheat bagel
+-------------->english muffin
+-------------->everything bagel
+-------------->plain bagel
+--------->choice of meat preparation
+-------------->medium
+-------------->medium well
+-------------->medium rare
+-------------->well done
+--------->meal additions
+-------------->can soda (12 oz.)
+------------------->choice of can soda
+------------------------>diet sprite
+------------------------>diet coke
+------------------------>coke
+-------------->french fried potato
+-------------->grape leaves (5)
+-------------->mozzarella sticks (7)
+-------------->bottled spring water
+-------------->buffalo wings (8)
+-------------->nachos
+-------------->fresh fruit salad
+-------------->snapple
+------------------->choice of snapple
+------------------------>lemon tea
+------------------------>mango madness
+------------------------>diet lemon tea
+------------------------>orangeade
+------------------------>raspberry tea
+------------------------>peach tea
+------------------------>diet raspberry tea
+------------------------>diet peach tea
+------------------------>fruit punch
+------------------------>kiwi strawberry
+-------------->iced coffee
+------------------->choice of preparation
+------------------------>decaf
+------------------------>regular
+------------------->beverage preparation
+------------------------>lemon
+------------------------>sugar
+------------------------>splenda
+------------------------>equal
+------------------------>whole milk
+------------------------>half & half
+------------------------>skim milk
+--------->choice of burger extras
+-------------->fresh mushroom
+-------------->american cheese
+-------------->grilled onions
+-------------->cheddar cheese
+-------------->feta cheese
+-------------->ham
+-------------->mozzarella cheese
+-------------->tomato
+-------------->guacamole
+-------------->muenster cheese
+-------------->bacon
+-------------->pepper jack cheese
+-------------->sauteed onions
+-------------->swiss cheese
+-------------->havarti cheese
+--------->make it burger deluxe
+-------------->deluxe with french fries
+-------------->deluxe with sweet potato fries
+-------------->deluxe with salad
+-------------->deluxe with baked potato
+-------------->deluxe with curly fries
+---->turkey burger
+--------->make it burger deluxe
+-------------->deluxe with sweet potato fries
+-------------->deluxe with french fries
+-------------->deluxe with curly fries
+-------------->deluxe with salad
+-------------->deluxe with baked potato
+--------->meal additions
+-------------->grape leaves (5)
+-------------->mozzarella sticks (7)
+-------------->bottled spring water
+-------------->buffalo wings (8)
+-------------->french fried potato
+-------------->nachos
+-------------->fresh fruit salad
+-------------->snapple
+------------------->choice of snapple
+------------------------>diet lemon tea
+------------------------>orangeade
+------------------------>raspberry tea
+------------------------>peach tea
+------------------------>diet raspberry tea
+------------------------>diet peach tea
+------------------------>fruit punch
+------------------------>kiwi strawberry
+------------------------>lemon tea
+------------------------>mango madness
+-------------->iced coffee
+------------------->choice of preparation
+------------------------>regular
+------------------------>decaf
+------------------->beverage preparation
+------------------------>sugar
+------------------------>splenda
+------------------------>equal
+------------------------>whole milk
+------------------------>half & half
+------------------------>skim milk
+------------------------>lemon
+-------------->can soda (12 oz.)
+------------------->choice of can soda
+------------------------>coke
+------------------------>diet sprite
+------------------------>diet coke
+--------->choice of burger extras
+-------------->cheddar cheese
+-------------->feta cheese
+-------------->ham
+-------------->mozzarella cheese
+-------------->tomato
+-------------->guacamole
+-------------->muenster cheese
+-------------->bacon
+-------------->pepper jack cheese
+-------------->sauteed onions
+-------------->swiss cheese
+-------------->havarti cheese
+-------------->fresh mushroom
+-------------->american cheese
+-------------->grilled onions
+--------->choice of burger bread
+-------------->sesame seed bagel
+-------------->burger bun
+-------------->whole wheat bagel
+-------------->english muffin
+-------------->everything bagel
+-------------->plain bagel
+-------------->poppy seed bagel
+---->portobello burger
+--------->make it burger deluxe
+-------------->deluxe with curly fries
+-------------->deluxe with sweet potato fries
+-------------->deluxe with salad
+-------------->deluxe with baked potato
+-------------->deluxe with french fries
+--------->choice of burger bread
+-------------->poppy seed bagel
+-------------->sesame seed bagel
+-------------->burger bun
+-------------->whole wheat bagel
+-------------->english muffin
+-------------->everything bagel
+-------------->plain bagel
+--------->choice of meat preparation
+-------------->well done
+-------------->medium
+-------------->medium well
+-------------->medium rare
+--------->meal additions
+-------------->can soda (12 oz.)
+------------------->choice of can soda
+------------------------>diet sprite
+------------------------>coke
+------------------------>diet coke
+-------------->fresh fruit salad
+-------------->grape leaves (5)
+-------------->french fried potato
+-------------->mozzarella sticks (7)
+-------------->bottled spring water
+-------------->buffalo wings (8)
+-------------->nachos
+-------------->iced coffee
+------------------->beverage preparation
+------------------------>skim milk
+------------------------>lemon
+------------------------>sugar
+------------------------>splenda
+------------------------>equal
+------------------------>whole milk
+------------------------>half & half
+------------------->choice of preparation
+------------------------>regular
+------------------------>decaf
+-------------->snapple
+------------------->choice of snapple
+------------------------>kiwi strawberry
+------------------------>lemon tea
+------------------------>mango madness
+------------------------>diet lemon tea
+------------------------>orangeade
+------------------------>raspberry tea
+------------------------>peach tea
+------------------------>diet raspberry tea
+------------------------>diet peach tea
+------------------------>fruit punch
+--------->choice of burger extras
+-------------->fresh mushroom
+-------------->american cheese
+-------------->grilled onions
+-------------->cheddar cheese
+-------------->feta cheese
+-------------->ham
+-------------->mozzarella cheese
+-------------->tomato
+-------------->guacamole
+-------------->muenster cheese
+-------------->bacon
+-------------->pepper jack cheese
+-------------->sauteed onions
+-------------->swiss cheese
+-------------->havarti cheese
+---->pizza burger
+--------->meal additions
+-------------->grape leaves (5)
+-------------->bottled spring water
+-------------->mozzarella sticks (7)
+-------------->fresh fruit salad
+-------------->buffalo wings (8)
+-------------->nachos
+-------------->can soda (12 oz.)
+------------------->choice of can soda
+------------------------>diet coke
+------------------------>coke
+------------------------>diet sprite
+-------------->iced coffee
+------------------->choice of preparation
+------------------------>decaf
+------------------------>regular
+------------------->beverage preparation
+------------------------>lemon
+------------------------>sugar
+------------------------>splenda
+------------------------>equal
+------------------------>whole milk
+------------------------>half & half
+------------------------>skim milk
+-------------->snapple
+------------------->choice of snapple
+------------------------>mango madness
+------------------------>diet lemon tea
+------------------------>orangeade
+------------------------>raspberry tea
+------------------------>peach tea
+------------------------>diet raspberry tea
+------------------------>diet peach tea
+------------------------>fruit punch
+------------------------>kiwi strawberry
+------------------------>lemon tea
+-------------->french fried potato
+--------->choice of burger extras
+-------------->grilled onions
+-------------->cheddar cheese
+-------------->feta cheese
+-------------->ham
+-------------->mozzarella cheese
+-------------->tomato
+-------------->guacamole
+-------------->muenster cheese
+-------------->bacon
+-------------->pepper jack cheese
+-------------->sauteed onions
+-------------->swiss cheese
+-------------->havarti cheese
+-------------->fresh mushroom
+-------------->american cheese
+--------->make it burger deluxe
+-------------->deluxe with salad
+-------------->deluxe with baked potato
+-------------->deluxe with sweet potato fries
+-------------->deluxe with curly fries
+-------------->deluxe with french fries
+--------->choice of burger bread
+-------------->sesame seed bagel
+-------------->burger bun
+-------------->whole wheat bagel
+-------------->english muffin
+-------------->everything bagel
+-------------->plain bagel
+-------------->poppy seed bagel
+--------->choice of meat preparation
+-------------->medium well
+-------------->medium
+-------------->well done
+-------------->medium rare
+---->pesto burger
+--------->choice of burger extras
+-------------->muenster cheese
+-------------->bacon
+-------------->pepper jack cheese
+-------------->sauteed onions
+-------------->swiss cheese
+-------------->havarti cheese
+-------------->fresh mushroom
+-------------->american cheese
+-------------->grilled onions
+-------------->cheddar cheese
+-------------->feta cheese
+-------------->ham
+-------------->mozzarella cheese
+-------------->tomato
+-------------->guacamole
+--------->make it burger deluxe
+-------------->deluxe with salad
+-------------->deluxe with baked potato
+-------------->deluxe with sweet potato fries
+-------------->deluxe with french fries
+-------------->deluxe with curly fries
+--------->choice of burger bread
+-------------->everything bagel
+-------------->plain bagel
+-------------->poppy seed bagel
+-------------->sesame seed bagel
+-------------->burger bun
+-------------->whole wheat bagel
+-------------->english muffin
+--------->choice of meat preparation
+-------------->medium rare
+-------------->well done
+-------------->medium
+-------------->medium well
+--------->meal additions
+-------------->nachos
+-------------->fresh fruit salad
+-------------->iced coffee
+------------------->choice of preparation
+------------------------>regular
+------------------------>decaf
+------------------->beverage preparation
+------------------------>whole milk
+------------------------>half & half
+------------------------>skim milk
+------------------------>lemon
+------------------------>sugar
+------------------------>splenda
+------------------------>equal
+-------------->snapple
+------------------->choice of snapple
+------------------------>diet peach tea
+------------------------>fruit punch
+------------------------>kiwi strawberry
+------------------------>lemon tea
+------------------------>mango madness
+------------------------>diet lemon tea
+------------------------>orangeade
+------------------------>raspberry tea
+------------------------>peach tea
+------------------------>diet raspberry tea
+-------------->french fried potato
+-------------->can soda (12 oz.)
+------------------->choice of can soda
+------------------------>diet coke
+------------------------>diet sprite
+------------------------>coke
+-------------->grape leaves (5)
+-------------->bottled spring water
+-------------->mozzarella sticks (7)
+-------------->buffalo wings (8)
+
+
+ritz diner
+-->Types of hamburger
+---->american style burger
+--------->pick one
+-------------->regular
+-------------->deluxe
+------------------->choice of deluxe side
+------------------------>waffle fries
+----------------------------->add cheese
+---------------------------------->cheddar cheese
+---------------------------------->american cheese
+------------------------>onion rings
+------------------------>french fries
+----------------------------->add cheese
+---------------------------------->american cheese
+---------------------------------->cheddar cheese
+------------------------>sweet potato fries
+----------------------------->add cheese
+---------------------------------->american cheese
+---------------------------------->cheddar cheese
+------------------------>curly fries
+----------------------------->add cheese
+---------------------------------->cheddar cheese
+---------------------------------->american cheese
+--------->choice of burger preparation
+-------------->well done
+-------------->medium well
+-------------->medium rare
+-------------->medium
+--------->extras & add-ons
+-------------->mustard
+-------------->american cheese
+-------------->lettuce
+-------------->cheddar cheese
+-------------->onion
+-------------->feta cheese
+-------------->tomato
+-------------->mozzarella cheese
+-------------->mayonnaise
+-------------->avocado
+-------------->ketchup
+-------------->swiss cheese
+-------------->bacon
+-------------->ham
+-------------->sliced egg
+---->italian style burger
+--------->pick one
+-------------->regular
+-------------->deluxe
+------------------->choice of deluxe side
+------------------------>waffle fries
+----------------------------->add cheese
+---------------------------------->cheddar cheese
+---------------------------------->american cheese
+------------------------>onion rings
+------------------------>french fries
+----------------------------->add cheese
+---------------------------------->american cheese
+---------------------------------->cheddar cheese
+------------------------>sweet potato fries
+----------------------------->add cheese
+---------------------------------->american cheese
+---------------------------------->cheddar cheese
+------------------------>curly fries
+----------------------------->add cheese
+---------------------------------->cheddar cheese
+---------------------------------->american cheese
+--------->choice of burger preparation
+-------------->medium rare
+-------------->well done
+-------------->medium well
+-------------->medium
+--------->extras & add-ons
+-------------->onion
+-------------->feta cheese
+-------------->mayonnaise
+-------------->tomato
+-------------->mozzarella cheese
+-------------->avocado
+-------------->swiss cheese
+-------------->bacon
+-------------->ham
+-------------->ketchup
+-------------->sliced egg
+-------------->mustard
+-------------->american cheese
+-------------->lettuce
+-------------->cheddar cheese
+---->california style burger
+--------->pick one
+-------------->regular
+-------------->deluxe
+------------------->choice of deluxe side
+------------------------>waffle fries
+----------------------------->add cheese
+---------------------------------->cheddar cheese
+---------------------------------->american cheese
+------------------------>onion rings
+------------------------>french fries
+----------------------------->add cheese
+---------------------------------->american cheese
+---------------------------------->cheddar cheese
+------------------------>sweet potato fries
+----------------------------->add cheese
+---------------------------------->american cheese
+---------------------------------->cheddar cheese
+------------------------>curly fries
+----------------------------->add cheese
+---------------------------------->cheddar cheese
+---------------------------------->american cheese
+--------->choice of burger preparation
+-------------->well done
+-------------->medium rare
+-------------->medium well
+-------------->medium
+--------->extras & add-ons
+-------------->avocado
+-------------->swiss cheese
+-------------->bacon
+-------------->ketchup
+-------------->ham
+-------------->mayonnaise
+-------------->sliced egg
+-------------->mustard
+-------------->american cheese
+-------------->lettuce
+-------------->cheddar cheese
+-------------->onion
+-------------->feta cheese
+-------------->tomato
+-------------->mozzarella cheese
+---->russian style burger
+--------->pick one
+-------------->regular
+-------------->deluxe
+------------------->choice of deluxe side
+------------------------>waffle fries
+----------------------------->add cheese
+---------------------------------->cheddar cheese
+---------------------------------->american cheese
+------------------------>onion rings
+------------------------>french fries
+----------------------------->add cheese
+---------------------------------->american cheese
+---------------------------------->cheddar cheese
+------------------------>sweet potato fries
+----------------------------->add cheese
+---------------------------------->american cheese
+---------------------------------->cheddar cheese
+------------------------>curly fries
+----------------------------->add cheese
+---------------------------------->cheddar cheese
+---------------------------------->american cheese
+--------->choice of burger preparation
+-------------->medium well
+-------------->medium rare
+-------------->well done
+-------------->medium
+--------->extras & add-ons
+-------------->ham
+-------------->ketchup
+-------------->sliced egg
+-------------->mustard
+-------------->american cheese
+-------------->lettuce
+-------------->cheddar cheese
+-------------->onion
+-------------->feta cheese
+-------------->tomato
+-------------->mozzarella cheese
+-------------->avocado
+-------------->mayonnaise
+-------------->swiss cheese
+-------------->bacon
+---->alpine style burger
+--------->choice of burger preparation
+-------------->medium well
+-------------->medium
+-------------->well done
+-------------->medium rare
+--------->extras & add-ons
+-------------->lettuce
+-------------->cheddar cheese
+-------------->onion
+-------------->feta cheese
+-------------->tomato
+-------------->mozzarella cheese
+-------------->avocado
+-------------->swiss cheese
+-------------->bacon
+-------------->mayonnaise
+-------------->ham
+-------------->sliced egg
+-------------->ketchup
+-------------->mustard
+-------------->american cheese
+--------->pick one
+-------------->deluxe
+------------------->choice of deluxe side
+------------------------>sweet potato fries
+----------------------------->add cheese
+---------------------------------->cheddar cheese
+---------------------------------->american cheese
+------------------------>curly fries
+----------------------------->add cheese
+---------------------------------->american cheese
+---------------------------------->cheddar cheese
+------------------------>waffle fries
+----------------------------->add cheese
+---------------------------------->american cheese
+---------------------------------->cheddar cheese
+------------------------>onion rings
+------------------------>french fries
+----------------------------->add cheese
+---------------------------------->cheddar cheese
+---------------------------------->american cheese
+-------------->regular
+---->wisconsin style burger
+--------->choice of burger preparation
+-------------->medium well
+-------------->medium
+-------------->well done
+-------------->medium rare
+--------->extras & add-ons
+-------------->tomato
+-------------->mozzarella cheese
+-------------->mayonnaise
+-------------->avocado
+-------------->swiss cheese
+-------------->bacon
+-------------->ketchup
+-------------->ham
+-------------->sliced egg
+-------------->mustard
+-------------->american cheese
+-------------->lettuce
+-------------->cheddar cheese
+-------------->onion
+-------------->feta cheese
+--------->pick one
+-------------->deluxe
+------------------->choice of deluxe side
+------------------------>sweet potato fries
+----------------------------->add cheese
+---------------------------------->cheddar cheese
+---------------------------------->american cheese
+------------------------>curly fries
+----------------------------->add cheese
+---------------------------------->american cheese
+---------------------------------->cheddar cheese
+------------------------>waffle fries
+----------------------------->add cheese
+---------------------------------->american cheese
+---------------------------------->cheddar cheese
+------------------------>onion rings
+------------------------>french fries
+----------------------------->add cheese
+---------------------------------->cheddar cheese
+---------------------------------->american cheese
+-------------->regular
+---->texas style burger
+--------->choice of burger preparation
+-------------->well done
+-------------->medium
+-------------->medium well
+-------------->medium rare
+--------->extras & add-ons
+-------------->bacon
+-------------->ham
+-------------->sliced egg
+-------------->mayonnaise
+-------------->mustard
+-------------->american cheese
+-------------->lettuce
+-------------->cheddar cheese
+-------------->ketchup
+-------------->onion
+-------------->feta cheese
+-------------->tomato
+-------------->mozzarella cheese
+-------------->avocado
+-------------->swiss cheese
+--------->pick one
+-------------->deluxe
+------------------->choice of deluxe side
+------------------------>sweet potato fries
+----------------------------->add cheese
+---------------------------------->cheddar cheese
+---------------------------------->american cheese
+------------------------>curly fries
+----------------------------->add cheese
+---------------------------------->american cheese
+---------------------------------->cheddar cheese
+------------------------>waffle fries
+----------------------------->add cheese
+---------------------------------->american cheese
+---------------------------------->cheddar cheese
+------------------------>onion rings
+------------------------>french fries
+----------------------------->add cheese
+---------------------------------->cheddar cheese
+---------------------------------->american cheese
+-------------->regular
+---->turkey burger
+--------->extras & add-ons
+-------------->avocado
+-------------->swiss cheese
+-------------->bacon
+-------------->ham
+-------------->sliced egg
+-------------->mayonnaise
+-------------->mustard
+-------------->american cheese
+-------------->lettuce
+-------------->cheddar cheese
+-------------->ketchup
+-------------->onion
+-------------->feta cheese
+-------------->tomato
+-------------->mozzarella cheese
+--------->pick one
+-------------->deluxe
+------------------->choice of deluxe side
+------------------------>curly fries
+----------------------------->add cheese
+---------------------------------->cheddar cheese
+---------------------------------->american cheese
+------------------------>waffle fries
+----------------------------->add cheese
+---------------------------------->american cheese
+---------------------------------->cheddar cheese
+------------------------>onion rings
+------------------------>french fries
+----------------------------->add cheese
+---------------------------------->american cheese
+---------------------------------->cheddar cheese
+------------------------>sweet potato fries
+----------------------------->add cheese
+---------------------------------->cheddar cheese
+---------------------------------->american cheese
+-------------->regular
+---->bbq burger
+--------->choice of burger preparation
+-------------->medium
+-------------->well done
+-------------->medium rare
+-------------->medium well
+--------->extras & add-ons
+-------------->mustard
+-------------->american cheese
+-------------->lettuce
+-------------->cheddar cheese
+-------------->onion
+-------------->feta cheese
+-------------->tomato
+-------------->mozzarella cheese
+-------------->avocado
+-------------->mayonnaise
+-------------->swiss cheese
+-------------->bacon
+-------------->ham
+-------------->ketchup
+-------------->sliced egg
+--------->pick one
+-------------->deluxe
+------------------->choice of deluxe side
+------------------------>curly fries
+----------------------------->add cheese
+---------------------------------->cheddar cheese
+---------------------------------->american cheese
+------------------------>waffle fries
+----------------------------->add cheese
+---------------------------------->american cheese
+---------------------------------->cheddar cheese
+------------------------>onion rings
+------------------------>french fries
+----------------------------->add cheese
+---------------------------------->american cheese
+---------------------------------->cheddar cheese
+------------------------>sweet potato fries
+----------------------------->add cheese
+---------------------------------->cheddar cheese
+---------------------------------->american cheese
+-------------->regular
+---->pizza style burger
+--------->choice of burger preparation
+-------------->medium rare
+-------------->medium well
+-------------->well done
+-------------->medium
+--------->extras & add-ons
+-------------->sliced egg
+-------------->mustard
+-------------->american cheese
+-------------->mayonnaise
+-------------->lettuce
+-------------->cheddar cheese
+-------------->onion
+-------------->feta cheese
+-------------->ketchup
+-------------->tomato
+-------------->mozzarella cheese
+-------------->avocado
+-------------->swiss cheese
+-------------->bacon
+-------------->ham
+--------->pick one
+-------------->deluxe
+------------------->choice of deluxe side
+------------------------>french fries
+----------------------------->add cheese
+---------------------------------->cheddar cheese
+---------------------------------->american cheese
+------------------------>sweet potato fries
+----------------------------->add cheese
+---------------------------------->cheddar cheese
+---------------------------------->american cheese
+------------------------>curly fries
+----------------------------->add cheese
+---------------------------------->american cheese
+---------------------------------->cheddar cheese
+------------------------>waffle fries
+----------------------------->add cheese
+---------------------------------->cheddar cheese
+---------------------------------->american cheese
+------------------------>onion rings
+-------------->regular
+
+
+trend diner
+-->Types of hamburger
+---->john wayne burger
+--------->burger add-ons
+-------------->applewood smoked bacon
+-------------->cheese
+------------------->choice of cheese
+------------------------>provolone cheese
+------------------------>blue cheese
+------------------------>feta cheese
+------------------------>pepper jack cheese
+------------------------>american cheese
+------------------------>swiss cheese
+------------------------>cheddar cheese
+------------------------>mozzarella cheese
+--------->choice of meat preparation
+-------------->medium rare
+-------------->well done
+-------------->medium
+-------------->medium well
+--------->make a burger deluxe
+-------------->deluxe with baked potato
+-------------->deluxe with onion rings
+-------------->deluxe with organic greens
+------------------->choice of salad dressing
+------------------------>lemon-caper vinagrette
+------------------------>signature balsamic vinaigrette
+------------------------>chipotle-lime vinaigrette
+------------------------>extra virgin olive oil and vinegar
+------------------------>buttermilk ranch dressing
+-------------->deluxe with curly fries
+-------------->deluxe with sweet potato fries
+-------------->deluxe with seasoned fries
+-------------->deluxe with waffle fries
+---->cobb burger
+--------->burger add-ons
+-------------->cheese
+------------------->choice of cheese
+------------------------>mozzarella cheese
+------------------------>provolone cheese
+------------------------>blue cheese
+------------------------>feta cheese
+------------------------>pepper jack cheese
+------------------------>swiss cheese
+------------------------>american cheese
+------------------------>cheddar cheese
+-------------->applewood smoked bacon
+--------->make a burger deluxe
+-------------->deluxe with waffle fries
+-------------->deluxe with baked potato
+-------------->deluxe with onion rings
+-------------->deluxe with organic greens
+------------------->choice of salad dressing
+------------------------>lemon-caper vinagrette
+------------------------>signature balsamic vinaigrette
+------------------------>chipotle-lime vinaigrette
+------------------------>extra virgin olive oil and vinegar
+------------------------>buttermilk ranch dressing
+-------------->deluxe with curly fries
+-------------->deluxe with sweet potato fries
+-------------->deluxe with seasoned fries
+--------->choice of meat preparation
+-------------->well done
+-------------->medium
+-------------->medium rare
+-------------->medium well
+---->mexican burger
+--------->burger add-ons
+-------------->cheese
+------------------->choice of cheese
+------------------------>swiss cheese
+------------------------>cheddar cheese
+------------------------>mozzarella cheese
+------------------------>american cheese
+------------------------>provolone cheese
+------------------------>blue cheese
+------------------------>feta cheese
+------------------------>pepper jack cheese
+-------------->applewood smoked bacon
+--------->make a burger deluxe
+-------------->deluxe with sweet potato fries
+-------------->deluxe with seasoned fries
+-------------->deluxe with waffle fries
+-------------->deluxe with baked potato
+-------------->deluxe with onion rings
+-------------->deluxe with organic greens
+------------------->choice of salad dressing
+------------------------>lemon-caper vinagrette
+------------------------>signature balsamic vinaigrette
+------------------------>chipotle-lime vinaigrette
+------------------------>extra virgin olive oil and vinegar
+------------------------>buttermilk ranch dressing
+-------------->deluxe with curly fries
+--------->choice of meat preparation
+-------------->well done
+-------------->medium
+-------------->medium rare
+-------------->medium well
+---->english burger
+--------->choice of meat preparation
+-------------->medium
+-------------->medium well
+-------------->medium rare
+-------------->well done
+--------->make a burger deluxe
+-------------->deluxe with sweet potato fries
+-------------->deluxe with seasoned fries
+-------------->deluxe with waffle fries
+-------------->deluxe with baked potato
+-------------->deluxe with onion rings
+-------------->deluxe with organic greens
+------------------->choice of salad dressing
+------------------------>chipotle-lime vinaigrette
+------------------------>extra virgin olive oil and vinegar
+------------------------>buttermilk ranch dressing
+------------------------>lemon-caper vinagrette
+------------------------>signature balsamic vinaigrette
+-------------->deluxe with curly fries
+--------->burger add-ons
+-------------->cheese
+------------------->choice of cheese
+------------------------>cheddar cheese
+------------------------>mozzarella cheese
+------------------------>provolone cheese
+------------------------>blue cheese
+------------------------>american cheese
+------------------------>feta cheese
+------------------------>pepper jack cheese
+------------------------>swiss cheese
+-------------->applewood smoked bacon
+---->greek burger
+--------->choice of meat preparation
+-------------->medium well
+-------------->medium
+-------------->medium rare
+-------------->well done
+--------->make a burger deluxe
+-------------->deluxe with curly fries
+-------------->deluxe with sweet potato fries
+-------------->deluxe with seasoned fries
+-------------->deluxe with waffle fries
+-------------->deluxe with baked potato
+-------------->deluxe with onion rings
+-------------->deluxe with organic greens
+------------------->choice of salad dressing
+------------------------>chipotle-lime vinaigrette
+------------------------>extra virgin olive oil and vinegar
+------------------------>buttermilk ranch dressing
+------------------------>lemon-caper vinagrette
+------------------------>signature balsamic vinaigrette
+--------->burger add-ons
+-------------->cheese
+------------------->choice of cheese
+------------------------>pepper jack cheese
+------------------------>american cheese
+------------------------>swiss cheese
+------------------------>cheddar cheese
+------------------------>mozzarella cheese
+------------------------>provolone cheese
+------------------------>blue cheese
+------------------------>feta cheese
+-------------->applewood smoked bacon
+---->santa fe burger
+--------->choice of meat preparation
+-------------->well done
+-------------->medium
+-------------->medium well
+-------------->medium rare
+--------->make a burger deluxe
+-------------->deluxe with waffle fries
+-------------->deluxe with baked potato
+-------------->deluxe with onion rings
+-------------->deluxe with organic greens
+------------------->choice of salad dressing
+------------------------>signature balsamic vinaigrette
+------------------------>chipotle-lime vinaigrette
+------------------------>extra virgin olive oil and vinegar
+------------------------>buttermilk ranch dressing
+------------------------>lemon-caper vinagrette
+-------------->deluxe with curly fries
+-------------->deluxe with sweet potato fries
+-------------->deluxe with seasoned fries
+--------->burger add-ons
+-------------->cheese
+------------------->choice of cheese
+------------------------>mozzarella cheese
+------------------------>provolone cheese
+------------------------>blue cheese
+------------------------>feta cheese
+------------------------>pepper jack cheese
+------------------------>american cheese
+------------------------>swiss cheese
+------------------------>cheddar cheese
+-------------->applewood smoked bacon
+---->pizza burger
+--------->burger add-ons
+-------------->cheese
+------------------->choice of cheese
+------------------------>feta cheese
+------------------------>pepper jack cheese
+------------------------>swiss cheese
+------------------------>cheddar cheese
+------------------------>mozzarella cheese
+------------------------>provolone cheese
+------------------------>american cheese
+------------------------>blue cheese
+-------------->applewood smoked bacon
+--------->make a burger deluxe
+-------------->deluxe with curly fries
+-------------->deluxe with sweet potato fries
+-------------->deluxe with seasoned fries
+-------------->deluxe with waffle fries
+-------------->deluxe with baked potato
+-------------->deluxe with onion rings
+-------------->deluxe with organic greens
+------------------->choice of salad dressing
+------------------------>lemon-caper vinagrette
+------------------------>signature balsamic vinaigrette
+------------------------>chipotle-lime vinaigrette
+------------------------>extra virgin olive oil and vinegar
+------------------------>buttermilk ranch dressing
+--------->choice of meat preparation
+-------------->medium
+-------------->well done
+-------------->medium rare
+-------------->medium well
+---->godfather burger
+--------->choice of meat preparation
+-------------->medium
+-------------->medium well
+-------------->medium rare
+-------------->well done
+--------->make a burger deluxe
+-------------->deluxe with waffle fries
+-------------->deluxe with baked potato
+-------------->deluxe with onion rings
+-------------->deluxe with organic greens
+------------------->choice of salad dressing
+------------------------>chipotle-lime vinaigrette
+------------------------>extra virgin olive oil and vinegar
+------------------------>buttermilk ranch dressing
+------------------------>lemon-caper vinagrette
+------------------------>signature balsamic vinaigrette
+-------------->deluxe with curly fries
+-------------->deluxe with sweet potato fries
+-------------->deluxe with seasoned fries
+--------->burger add-ons
+-------------->cheese
+------------------->choice of cheese
+------------------------>provolone cheese
+------------------------>american cheese
+------------------------>blue cheese
+------------------------>feta cheese
+------------------------>pepper jack cheese
+------------------------>swiss cheese
+------------------------>cheddar cheese
+------------------------>mozzarella cheese
+-------------->applewood smoked bacon
+---->bistro burger
+--------->choice of meat preparation
+-------------->medium well
+-------------->well done
+-------------->medium
+-------------->medium rare
+--------->make a burger deluxe
+-------------->deluxe with onion rings
+-------------->deluxe with organic greens
+------------------->choice of salad dressing
+------------------------>extra virgin olive oil and vinegar
+------------------------>buttermilk ranch dressing
+------------------------>lemon-caper vinagrette
+------------------------>signature balsamic vinaigrette
+------------------------>chipotle-lime vinaigrette
+-------------->deluxe with curly fries
+-------------->deluxe with sweet potato fries
+-------------->deluxe with seasoned fries
+-------------->deluxe with waffle fries
+-------------->deluxe with baked potato
+--------->burger add-ons
+-------------->cheese
+------------------->choice of cheese
+------------------------>blue cheese
+------------------------>feta cheese
+------------------------>pepper jack cheese
+------------------------>swiss cheese
+------------------------>american cheese
+------------------------>cheddar cheese
+------------------------>mozzarella cheese
+------------------------>provolone cheese
+-------------->applewood smoked bacon
+---->sirloin steak burger
+--------->make a burger deluxe
+-------------->deluxe with sweet potato fries
+-------------->deluxe with seasoned fries
+-------------->deluxe with waffle fries
+-------------->deluxe with baked potato
+-------------->deluxe with onion rings
+-------------->deluxe with organic greens
+------------------->choice of salad dressing
+------------------------>buttermilk ranch dressing
+------------------------>lemon-caper vinagrette
+------------------------>signature balsamic vinaigrette
+------------------------>chipotle-lime vinaigrette
+------------------------>extra virgin olive oil and vinegar
+-------------->deluxe with curly fries
+--------->burger add-ons
+-------------->applewood smoked bacon
+-------------->cheese
+------------------->choice of cheese
+------------------------>cheddar cheese
+------------------------>mozzarella cheese
+------------------------>american cheese
+------------------------>provolone cheese
+------------------------>blue cheese
+------------------------>feta cheese
+------------------------>pepper jack cheese
+------------------------>swiss cheese
+--------->choice of meat preparation
+-------------->medium well
+-------------->medium rare
+-------------->medium
+-------------->well done
+
+
+cafe luka
+-->Types of hamburger
+---->california burger
+--------->burger toppings
+-------------->avocado
+-------------->cheddar cheese
+-------------->ham
+-------------->blue cheese
+-------------->feta cheese
+-------------->fresh mozzarella cheese
+-------------->mushrooms
+-------------->sauteed onions
+-------------->bacon
+--------->meat preparation
+-------------->well done
+-------------->medium rare
+-------------->medium
+-------------->medium well
+--------->make it a deluxe
+-------------->deluxe with french fries
+-------------->deluxe with baked potato
+-------------->deluxe with sweet potato fries
+---->turkey burger delights
+---->turkey burger
+--------->make it a deluxe
+-------------->deluxe with baked potato
+-------------->deluxe with sweet potato fries
+-------------->deluxe with french fries
+--------->burger toppings
+-------------->bacon
+-------------->avocado
+-------------->cheddar cheese
+-------------->blue cheese
+-------------->feta cheese
+-------------->fresh mozzarella cheese
+-------------->ham
+-------------->mushrooms
+-------------->sauteed onions
+---->vegetable burger
+--------->burger toppings
+-------------->sauteed onions
+-------------->bacon
+-------------->avocado
+-------------->cheddar cheese
+-------------->blue cheese
+-------------->ham
+-------------->feta cheese
+-------------->fresh mozzarella cheese
+-------------->mushrooms
+--------->make it a deluxe
+-------------->deluxe with baked potato
+-------------->deluxe with sweet potato fries
+-------------->deluxe with french fries
+---->pizza burger
+--------->burger toppings
+-------------->avocado
+-------------->ham
+-------------->cheddar cheese
+-------------->blue cheese
+-------------->feta cheese
+-------------->fresh mozzarella cheese
+-------------->mushrooms
+-------------->sauteed onions
+-------------->bacon
+--------->meat preparation
+-------------->well done
+-------------->medium rare
+-------------->medium
+-------------->medium well
+--------->make it a deluxe
+-------------->deluxe with baked potato
+-------------->deluxe with sweet potato fries
+-------------->deluxe with french fries
+---->cheese burger
+--------->choice of burger cheese
+-------------->american cheese
+-------------->swiss cheese
+--------->make it a deluxe
+-------------->deluxe with sweet potato fries
+-------------->deluxe with french fries
+-------------->deluxe with baked potato
+--------->burger toppings
+-------------->mushrooms
+-------------->ham
+-------------->sauteed onions
+-------------->bacon
+-------------->avocado
+-------------->cheddar cheese
+-------------->blue cheese
+-------------->feta cheese
+-------------->fresh mozzarella cheese
+--------->meat preparation
+-------------->medium well
+-------------->medium
+-------------->well done
+-------------->medium rare
+---->grilled vegetable burger diet delights
+---->sirloin burger - 8 oz.
+--------->burger toppings
+-------------->mushrooms
+-------------->sauteed onions
+-------------->bacon
+-------------->avocado
+-------------->ham
+-------------->cheddar cheese
+-------------->blue cheese
+-------------->feta cheese
+-------------->fresh mozzarella cheese
+--------->meat preparation
+-------------->medium rare
+-------------->medium well
+-------------->medium
+-------------->well done
+--------->make a deluxe
+-------------->deluxe with baked potato
+-------------->deluxe with sweet potato fries
+-------------->deluxe with french fries
+---->bbq chicken burger
+--------->burger toppings
+-------------->mushrooms
+-------------->sauteed onions
+-------------->bacon
+-------------->avocado
+-------------->ham
+-------------->cheddar cheese
+-------------->blue cheese
+-------------->feta cheese
+-------------->fresh mozzarella cheese
+--------->make it a deluxe
+-------------->deluxe with baked potato
+-------------->deluxe with sweet potato fries
+-------------->deluxe with french fries
+
+
+avenue diner
+-->Types of hamburger
+---->greek burger
+--------->choice of condiments
+-------------->mayo
+-------------->ketchup
+-------------->mustard
+--------->sandwich/burger add ons
+-------------->tomato
+-------------->onion
+-------------->american cheese
+-------------->cheddar cheese
+-------------->swiss cheese
+-------------->mozzarella cheese
+-------------->bacon
+-------------->lettuce
+-------------->avocado
+--------->meat preparation
+-------------->medium
+-------------->medium rare
+-------------->medium well
+-------------->rare
+-------------->well done
+---->english burger
+--------->choice of condiments
+-------------->ketchup
+-------------->mayo
+-------------->mustard
+--------->sandwich/burger add ons
+-------------->tomato
+-------------->onion
+-------------->american cheese
+-------------->cheddar cheese
+-------------->swiss cheese
+-------------->mozzarella cheese
+-------------->bacon
+-------------->lettuce
+-------------->avocado
+--------->meat preparation
+-------------->medium rare
+-------------->medium well
+-------------->medium
+-------------->rare
+-------------->well done
+--------->make it deluxe
+-------------->make it deluxe with french fries
+-------------->make it deluxe with onion rings
+-------------->make it deluxe with baked potato
+-------------->make it deluxe with sweet potato fries
+---->mexican burger
+--------->choice of condiments
+-------------->ketchup
+-------------->mayo
+-------------->mustard
+--------->sandwich/burger add ons
+-------------->cheddar cheese
+-------------->swiss cheese
+-------------->mozzarella cheese
+-------------->bacon
+-------------->lettuce
+-------------->avocado
+-------------->tomato
+-------------->onion
+-------------->american cheese
+--------->meat preparation
+-------------->medium rare
+-------------->medium well
+-------------->rare
+-------------->medium
+-------------->well done
+--------->make it deluxe
+-------------->make it deluxe with onion rings
+-------------->make it deluxe with baked potato
+-------------->make it deluxe with french fries
+-------------->make it deluxe with sweet potato fries
+---->jumbo beef burger
+--------->choice of condiments
+-------------->mayo
+-------------->ketchup
+-------------->mustard
+--------->sandwich/burger add ons
+-------------->bacon
+-------------->lettuce
+-------------->avocado
+-------------->tomato
+-------------->onion
+-------------->american cheese
+-------------->cheddar cheese
+-------------->swiss cheese
+-------------->mozzarella cheese
+--------->meat preparation
+-------------->rare
+-------------->medium well
+-------------->medium rare
+-------------->medium
+-------------->well done
+--------->make it deluxe
+-------------->make it deluxe with french fries
+-------------->make it deluxe with onion rings
+-------------->make it deluxe with baked potato
+-------------->make it deluxe with sweet potato fries
+---->texas burger
+--------->make it deluxe
+-------------->make it deluxe with french fries
+-------------->make it deluxe with sweet potato fries
+-------------->make it deluxe with baked potato
+-------------->make it deluxe with onion rings
+--------->choice of condiments
+-------------->mustard
+-------------->mayo
+-------------->ketchup
+--------->sandwich/burger add ons
+-------------->bacon
+-------------->lettuce
+-------------->avocado
+-------------->tomato
+-------------->onion
+-------------->american cheese
+-------------->cheddar cheese
+-------------->swiss cheese
+-------------->mozzarella cheese
+--------->meat preparation
+-------------->well done
+-------------->medium
+-------------->rare
+-------------->medium well
+-------------->medium rare
+---->fresh ground turkey burger
+--------->choice of condiments
+-------------->ketchup
+-------------->mayo
+-------------->mustard
+--------->sandwich/burger add ons
+-------------->mozzarella cheese
+-------------->bacon
+-------------->lettuce
+-------------->avocado
+-------------->tomato
+-------------->onion
+-------------->american cheese
+-------------->cheddar cheese
+-------------->swiss cheese
+--------->make it deluxe
+-------------->make it deluxe with onion rings
+-------------->make it deluxe with baked potato
+-------------->make it deluxe with french fries
+-------------->make it deluxe with sweet potato fries
+---->pizza burger
+--------->make it deluxe
+-------------->make it deluxe with french fries
+-------------->make it deluxe with onion rings
+-------------->make it deluxe with baked potato
+-------------->make it deluxe with sweet potato fries
+--------->choice of condiments
+-------------->mustard
+-------------->mayo
+-------------->ketchup
+--------->sandwich/burger add ons
+-------------->swiss cheese
+-------------->mozzarella cheese
+-------------->bacon
+-------------->lettuce
+-------------->avocado
+-------------->tomato
+-------------->onion
+-------------->american cheese
+-------------->cheddar cheese
+--------->meat preparation
+-------------->well done
+-------------->medium
+-------------->rare
+-------------->medium well
+-------------->medium rare
+---->avocado burger
+--------->meat preparation
+-------------->medium rare
+-------------->rare
+-------------->medium
+-------------->well done
+-------------->medium well
+--------->make it deluxe
+-------------->make it deluxe with french fries
+-------------->make it deluxe with sweet potato fries
+-------------->make it deluxe with baked potato
+-------------->make it deluxe with onion rings
+--------->choice of condiments
+-------------->mustard
+-------------->mayo
+-------------->ketchup
+--------->sandwich/burger add ons
+-------------->onion
+-------------->american cheese
+-------------->cheddar cheese
+-------------->swiss cheese
+-------------->mozzarella cheese
+-------------->bacon
+-------------->lettuce
+-------------->avocado
+-------------->tomato
+---->feta burger
+--------->sandwich/burger add ons
+-------------->mozzarella cheese
+-------------->bacon
+-------------->lettuce
+-------------->avocado
+-------------->tomato
+-------------->onion
+-------------->american cheese
+-------------->cheddar cheese
+-------------->swiss cheese
+--------->meat preparation
+-------------->medium well
+-------------->medium
+-------------->rare
+-------------->well done
+-------------->medium rare
+--------->make it deluxe
+-------------->make it deluxe with sweet potato fries
+-------------->make it deluxe with french fries
+-------------->make it deluxe with onion rings
+-------------->make it deluxe with baked potato
+--------->choice of condiments
+-------------->ketchup
+-------------->mayo
+-------------->mustard
+---->jumbo bacon burger
+--------->meat preparation
+-------------->well done
+-------------->medium rare
+-------------->rare
+-------------->medium well
+-------------->medium
+--------->make it deluxe
+-------------->make it deluxe with sweet potato fries
+-------------->make it deluxe with french fries
+-------------->make it deluxe with onion rings
+-------------->make it deluxe with baked potato
+--------->choice of condiments
+-------------->mustard
+-------------->ketchup
+-------------->mayo
+--------->sandwich/burger add ons
+-------------->avocado
+-------------->tomato
+-------------->onion
+-------------->american cheese
+-------------->cheddar cheese
+-------------->swiss cheese
+-------------->mozzarella cheese
+-------------->bacon
+-------------->lettuce
+
+
